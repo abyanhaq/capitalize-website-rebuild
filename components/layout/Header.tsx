@@ -19,27 +19,33 @@ import {
 type MegaMenuId = 'how-we-help' | 'who-we-help' | 'insights' | 'products' | null
 
 // ─── Logo ─────────────────────────────────────────────────────────────────────
-function Logo() {
+function Logo({ light }: { light?: boolean }) {
   return (
     <Link href="/" className="flex items-center gap-2.5 group flex-shrink-0">
       <div className="relative h-8 w-8">
         <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
-          <rect width="32" height="32" rx="6" fill="#0891B2" fillOpacity="0.10" />
+          <rect width="32" height="32" rx="6" fill="#0891B2" fillOpacity={light ? '0.15' : '0.10'} />
           <path
             d="M8 22L14 10L20 18L24 14"
-            stroke="#0891B2"
+            stroke={light ? '#22D3EE' : '#0891B2'}
             strokeWidth="2.5"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-          <circle cx="24" cy="14" r="2" fill="#0891B2" />
+          <circle cx="24" cy="14" r="2" fill={light ? '#22D3EE' : '#0891B2'} />
         </svg>
       </div>
       <div className="flex flex-col leading-none">
-        <span className="font-display text-base font-bold tracking-tight text-slate-900 group-hover:text-teal transition-colors duration-200">
+        <span className={cn(
+          'font-display text-base font-bold tracking-tight transition-colors duration-300',
+          light ? 'text-white group-hover:text-teal-bright' : 'text-slate-900 group-hover:text-teal'
+        )}>
           Capitalize
         </span>
-        <span className="font-sans text-[10px] tracking-widest text-teal uppercase font-medium opacity-80">
+        <span className={cn(
+          'font-sans text-[10px] tracking-widest uppercase font-medium opacity-80 transition-colors duration-300',
+          light ? 'text-teal-bright' : 'text-teal'
+        )}>
           Analytics
         </span>
       </div>
@@ -268,7 +274,7 @@ export function Header() {
   }, [pathname])
 
   useEffect(() => {
-    const handler = () => setScrolled(window.scrollY > 8)
+    const handler = () => setScrolled(window.scrollY > 60)
     window.addEventListener('scroll', handler, { passive: true })
     return () => window.removeEventListener('scroll', handler)
   }, [])
@@ -294,18 +300,23 @@ export function Header() {
     return () => document.removeEventListener('keydown', handler)
   }, [])
 
+  // Light mode = transparent over dark hero; solid = white after scrolling
+  const isLight = !scrolled && !activeMenu
+
   return (
     <>
       <header
         ref={headerRef}
         className={cn(
-          'sticky top-0 z-40 w-full bg-white border-b border-paper-border transition-shadow duration-300',
-          scrolled ? 'shadow-sm' : 'shadow-none',
+          'sticky top-0 z-40 w-full transition-all duration-300',
+          scrolled || activeMenu
+            ? 'bg-white border-b border-paper-border shadow-sm'
+            : 'bg-transparent border-b border-white/5',
         )}
       >
         <div className="container-wide">
           <div className="flex h-16 items-center gap-6">
-            <Logo />
+            <Logo light={isLight} />
 
             {/* Desktop nav */}
             <nav className="hidden lg:flex items-center gap-1 flex-1">
@@ -317,7 +328,9 @@ export function Header() {
                     'flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium transition-all duration-150',
                     activeMenu === trigger.menuId
                       ? 'text-teal bg-paper-50'
-                      : 'text-slate-700 hover:text-slate-900 hover:bg-paper-50',
+                      : isLight
+                        ? 'text-white/80 hover:text-white hover:bg-white/10'
+                        : 'text-slate-700 hover:text-slate-900 hover:bg-paper-50',
                   )}
                 >
                   {trigger.label}
@@ -330,7 +343,7 @@ export function Header() {
                 </button>
               ))}
 
-              <div className="mx-2 h-4 w-px bg-paper-border" />
+              <div className={cn('mx-2 h-4 w-px transition-colors duration-300', isLight ? 'bg-white/15' : 'bg-paper-border')} />
 
               {[
                 { label: 'Who We Are', href: '/who-we-are' },
@@ -340,7 +353,12 @@ export function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-paper-50 transition-all duration-150"
+                  className={cn(
+                    'rounded-md px-3 py-2 text-sm font-medium transition-all duration-150',
+                    isLight
+                      ? 'text-white/80 hover:text-white hover:bg-white/10'
+                      : 'text-slate-700 hover:text-slate-900 hover:bg-paper-50',
+                  )}
                 >
                   {item.label}
                 </Link>
@@ -348,14 +366,25 @@ export function Header() {
             </nav>
 
             <div className="hidden lg:flex items-center gap-3 ml-auto">
-              <Button href="/contact" variant="primary" size="sm" arrow>
+              <Button
+                href="/contact"
+                variant={isLight ? 'outline' : 'primary'}
+                size="sm"
+                arrow
+                className={isLight ? 'border-white/30 text-white hover:bg-white/10 hover:border-white/50' : ''}
+              >
                 Get in Touch
               </Button>
             </div>
 
             <button
               onClick={() => setMobileOpen(true)}
-              className="lg:hidden ml-auto rounded-md p-2 text-slate-500 hover:text-slate-900 hover:bg-paper-50 transition-colors"
+              className={cn(
+                'lg:hidden ml-auto rounded-md p-2 transition-colors',
+                isLight
+                  ? 'text-white/70 hover:text-white hover:bg-white/10'
+                  : 'text-slate-500 hover:text-slate-900 hover:bg-paper-50',
+              )}
               aria-label="Open menu"
             >
               <Menu className="h-5 w-5" />
@@ -363,8 +392,11 @@ export function Header() {
           </div>
         </div>
 
+        {/* Mega menu — always renders with white panel */}
         <div className="relative container-wide">
-          <AnimatePresence>{activeMenu && <MegaMenuPanel id={activeMenu} onClose={() => setActiveMenu(null)} />}</AnimatePresence>
+          <AnimatePresence>
+            {activeMenu && <MegaMenuPanel id={activeMenu} onClose={() => setActiveMenu(null)} />}
+          </AnimatePresence>
         </div>
       </header>
 

@@ -4,9 +4,28 @@ import { Phone, MapPin } from 'lucide-react'
 
 export function CtaSection() {
   return (
-    <section className="py-24 bg-navy-900 border-t border-navy-border">
-      <div className="container-narrow">
-        <div className="h-px w-12 bg-teal/30 mb-12" />
+    <section className="py-24 relative overflow-hidden" style={{ background: 'linear-gradient(160deg, #060E1B 0%, #070F1E 60%, #060C18 100%)' }}>
+      {/* Dot grid */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: 'radial-gradient(circle, rgba(30,58,90,0.45) 1px, transparent 1px)',
+          backgroundSize: '28px 28px',
+        }}
+      />
+      {/* Subtle atmospheric teal — bottom right */}
+      <div
+        className="absolute pointer-events-none"
+        style={{
+          bottom: '-10%',
+          right: '-5%',
+          width: '50%',
+          height: '80%',
+          background: 'radial-gradient(ellipse at center, rgba(8,145,178,0.06) 0%, transparent 65%)',
+        }}
+      />
+      <div className="container-narrow relative z-10">
+        <div className="h-px w-12 bg-teal/40 mb-12" />
 
         <AnimateOnView>
           <p className="section-label mb-6" style={{ color: '#22D3EE', opacity: 0.7 }}>Capitalize Analytics</p>
