@@ -56,8 +56,8 @@ export function HeroSection() {
         }}
       />
 
-      <div className="container-wide relative z-10 py-10 lg:py-14">
-        <div className="max-w-3xl lg:pl-12 xl:pl-20">
+      <div className="container-wide relative z-10 py-10 lg:py-14 !px-4 sm:!px-8">
+        <div className="max-w-3xl">
 
           {/* Eyebrow — accent bar + label */}
           <motion.div {...fade(0)} className="mb-8 flex items-center gap-3">
