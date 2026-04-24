@@ -18,8 +18,9 @@ const fade = (delay = 0) => ({
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-[92vh] flex items-center overflow-hidden" style={{
+    <section className="relative flex items-center overflow-hidden" style={{
       background: 'linear-gradient(160deg, #060E1B 0%, #070F1E 45%, #060C18 100%)',
+      minHeight: 'calc(100dvh - 4rem)',
     }}>
 
       {/* Precision dot grid — data-forward, very subtle */}
@@ -55,7 +56,7 @@ export function HeroSection() {
         }}
       />
 
-      <div className="container-wide relative z-10 py-20 lg:py-28">
+      <div className="container-wide relative z-10 py-10 lg:py-14">
         <div className="max-w-3xl">
 
           {/* Eyebrow — accent bar + label */}
