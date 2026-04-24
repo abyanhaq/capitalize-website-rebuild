@@ -34,7 +34,7 @@ export function IndustriesSection() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
           <div>
             <AnimateOnView>
-              <p className="data-label mb-4">Who We Help</p>
+              <p className="data-label mb-4">Capitalize Analytics — Who We Help</p>
             </AnimateOnView>
             <AnimateOnView delay={0.05}>
               <h2 className="font-display text-display-md font-bold text-white leading-tight">

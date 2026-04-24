@@ -56,7 +56,7 @@ function ServiceCard({ service }: { service: typeof SERVICES[0] }) {
     <motion.div variants={staggerItem}>
       <Link
         href={service.href}
-        className="group flex flex-col h-full border border-navy-border bg-navy-800 rounded-xl p-7 transition-colors duration-200 hover:border-teal/30 hover:bg-navy-700"
+        className="group flex flex-col h-full border border-navy-border bg-navy-800 rounded-xl p-7 transition-colors duration-200 hover:border-teal/30 hover:bg-navy-700 accent-bar overflow-hidden"
       >
         <div className="flex items-start justify-between mb-5">
           <span className="font-mono text-xs text-teal/60 tracking-widest">{service.num}</span>
@@ -79,7 +79,7 @@ export function ServicesSection() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
           <div>
             <AnimateOnView>
-              <p className="data-label mb-4">How We Help</p>
+              <p className="data-label mb-4">Capitalize Analytics — How We Help</p>
             </AnimateOnView>
             <AnimateOnView delay={0.05}>
               <h2 className="font-display text-display-md font-bold text-white leading-tight">

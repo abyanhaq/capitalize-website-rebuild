@@ -28,7 +28,7 @@ export function TrustedBrandsSection() {
     <section className="border-y border-navy-border bg-navy-800 py-12">
       <div className="container-wide">
         <AnimateOnView direction="none">
-          <p className="data-label text-center mb-8">Trusted By</p>
+          <p className="text-xs text-slate-500 tracking-widest uppercase text-center mb-8">Trusted by 1,000+ Organizations</p>
         </AnimateOnView>
 
         <AnimateOnView direction="none" delay={0.1}>
@@ -36,7 +36,7 @@ export function TrustedBrandsSection() {
             {CLIENT_BRANDS.map((brand) => (
               <div
                 key={brand.name}
-                className="h-8 flex items-center justify-center opacity-55 hover:opacity-80 transition-opacity duration-200 brightness-0 invert"
+                className="h-8 flex items-center justify-center opacity-65 hover:opacity-85 transition-opacity duration-200 brightness-0 invert"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img

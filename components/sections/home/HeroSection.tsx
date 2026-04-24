@@ -29,9 +29,10 @@ export function HeroSection() {
         <div className="max-w-3xl">
 
           {/* Eyebrow */}
-          <motion.p {...fade(0)} className="data-label mb-8">
-            AI &amp; Data Consulting · Dallas &amp; Houston
-          </motion.p>
+          <motion.div {...fade(0)} className="mb-8">
+            <p className="data-label mb-1">Capitalize Analytics</p>
+            <p className="text-xs text-slate-500 tracking-wide">AI &amp; Data Consulting &nbsp;·&nbsp; Dallas &amp; Houston, TX</p>
+          </motion.div>
 
           {/* Headline */}
           <motion.h1
@@ -47,8 +48,8 @@ export function HeroSection() {
           {/* Subheadline */}
           <motion.p {...fade(0.16)} className="text-lg text-slate-400 leading-relaxed max-w-xl mb-10">
             A specialist consulting firm that bridges AI strategy and enterprise ROI —
-            delivering analytics, automation, and data infrastructure that your teams
-            actually adopt and use.
+            delivering analytics, automation, and data infrastructure
+            so your teams work smarter, not harder.
           </motion.p>
 
           {/* CTAs */}
@@ -56,8 +57,8 @@ export function HeroSection() {
             <Button href="/contact" variant="primary" size="lg" arrow>
               Get in Touch
             </Button>
-            <Button href="/what-we-do" variant="ghost" size="lg">
-              See How We Help
+            <Button href="/what-we-do" variant="outline" size="lg">
+              Explore Our Work
             </Button>
           </motion.div>
 

@@ -22,7 +22,7 @@ export function AboutSection() {
           {/* Left */}
           <div>
             <AnimateOnView>
-              <p className="data-label mb-6">Who We Are</p>
+              <p className="data-label mb-6">Capitalize Analytics — Who We Are</p>
             </AnimateOnView>
 
             <AnimateOnView delay={0.05}>

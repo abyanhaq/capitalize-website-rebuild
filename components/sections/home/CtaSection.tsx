@@ -9,19 +9,19 @@ export function CtaSection() {
         <div className="h-px w-12 bg-teal/50 mb-12" />
 
         <AnimateOnView>
-          <p className="data-label mb-6">Let&apos;s Work Together</p>
+          <p className="data-label mb-6">Capitalize Analytics</p>
         </AnimateOnView>
 
         <AnimateOnView delay={0.05}>
           <h2 className="font-display text-display-lg font-bold text-white leading-tight mb-6">
-            Let&apos;s Build Your Next Breakthrough Together
+            Ready to Make Your Data Work for You?
           </h2>
         </AnimateOnView>
 
         <AnimateOnView delay={0.1}>
           <p className="text-lg text-slate-400 mb-10 leading-relaxed max-w-xl">
-            Whether you&apos;re exploring AI, automating workflows, or modernizing your data
-            environment, our team is here to help you find the right path forward.
+            Whether you&apos;re modernizing your data platform, building an AI use case, or
+            automating workflows — our team works alongside yours from day one through adoption.
           </p>
         </AnimateOnView>
 
