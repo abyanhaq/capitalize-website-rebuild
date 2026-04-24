@@ -44,7 +44,7 @@
   }
 
   body {
-    background-color: #FFFFFF;
+    background-color: #060E1B;
     color: var(--text-dark);
     min-height: 100dvh;
     @apply font-sans;
