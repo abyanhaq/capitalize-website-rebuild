@@ -12,10 +12,10 @@ export function Card({ children, className, hover = false, glow = false, as: Tag
   return (
     <Tag
       className={cn(
-        'rounded-xl bg-navy-800 border border-navy-border',
+        'rounded-xl bg-white border border-paper-border',
         'shadow-card',
-        hover && 'transition-all duration-300 hover:shadow-card-hover hover:border-teal/20 hover:-translate-y-0.5',
-        glow && 'hover:shadow-teal-sm',
+        hover && 'transition-all duration-200 hover:shadow-card-hover hover:border-teal/30 hover:-translate-y-0.5',
+        glow && 'hover:shadow-card-hover',
         className,
       )}
     >

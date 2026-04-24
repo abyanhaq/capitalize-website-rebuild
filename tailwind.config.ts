@@ -9,24 +9,30 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Core backgrounds — deep navy scale
+        // Dark surfaces — deep ink scale (hero, CTA, footer, header mega-menu)
         navy: {
-          950: '#080F1C',
-          900: '#0C1829',
-          800: '#111F35',
-          700: '#162840',
-          600: '#1C324E',
-          500: '#233D5E',
-          400: '#2C4D72',
-          border: '#1E3554',
-          'border-subtle': '#152033',
+          950: '#03080F',
+          900: '#060E1B',
+          800: '#0B1526',
+          700: '#111E35',
+          600: '#172A45',
+          500: '#1D3555',
+          400: '#243F65',
+          border: '#1A2E4A',
+          'border-subtle': '#0F1E30',
         },
+        // Light surfaces — paper scale (content sections)
+        paper: {
+          DEFAULT: '#FFFFFF',
+          50: '#F7F9FC',
+          100: '#EEF2F8',
+          border: '#D8E0EC',
+        },
+        // Brand accent — refined professional teal (works on dark and light)
         teal: {
-          DEFAULT: '#00B4D0',
-          bright: '#2DD4F0',
-          dim: '#007A90',
-          glow: 'rgba(0,180,208,0.12)',
-          'glow-strong': 'rgba(0,180,208,0.22)',
+          DEFAULT: '#0891B2',
+          bright: '#22D3EE',
+          dim: '#0E7490',
         },
       },
       fontFamily: {
@@ -35,7 +41,6 @@ const config: Config = {
         mono: ['var(--font-jetbrains-mono)', 'ui-monospace', 'monospace'],
       },
       fontSize: {
-        // Display scale
         'display-2xl': ['4.5rem', { lineHeight: '1.05', letterSpacing: '-0.03em' }],
         'display-xl': ['3.75rem', { lineHeight: '1.08', letterSpacing: '-0.025em' }],
         'display-lg': ['3rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }],
@@ -45,9 +50,8 @@ const config: Config = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'teal-glow': 'radial-gradient(ellipse at center, rgba(0,200,232,0.12) 0%, transparent 70%)',
         'hero-grid':
-          'linear-gradient(rgba(26,46,74,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(26,46,74,0.5) 1px, transparent 1px)',
+          'linear-gradient(rgba(26,46,74,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(26,46,74,0.03) 1px, transparent 1px)',
         'noise': "url('/noise.svg')",
       },
       backgroundSize: {
@@ -59,10 +63,6 @@ const config: Config = {
         'fade-up': 'fadeUp 0.6s ease-out forwards',
         'fade-in': 'fadeIn 0.5s ease-out forwards',
         'slide-in-right': 'slideInRight 0.5s ease-out forwards',
-        'pulse-teal': 'pulseTeal 2s cubic-bezier(0.4,0,0.6,1) infinite',
-        'data-flow': 'dataFlow 3s linear infinite',
-        'glow-pulse': 'glowPulse 3s ease-in-out infinite',
-        'scan-line': 'scanLine 4s linear infinite',
       },
       keyframes: {
         fadeUp: {
@@ -77,29 +77,12 @@ const config: Config = {
           '0%': { opacity: '0', transform: 'translateX(-16px)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         },
-        pulseTeal: {
-          '0%, 100%': { opacity: '1' },
-          '50%': { opacity: '0.4' },
-        },
-        dataFlow: {
-          '0%': { backgroundPosition: '0% 0%' },
-          '100%': { backgroundPosition: '100% 100%' },
-        },
-        glowPulse: {
-          '0%, 100%': { boxShadow: '0 0 20px rgba(0,200,232,0.1)' },
-          '50%': { boxShadow: '0 0 40px rgba(0,200,232,0.25)' },
-        },
-        scanLine: {
-          '0%': { transform: 'translateY(-100%)' },
-          '100%': { transform: 'translateY(100vh)' },
-        },
       },
       boxShadow: {
-        'teal-sm': '0 0 12px rgba(0,200,232,0.15)',
-        'teal-md': '0 0 24px rgba(0,200,232,0.2)',
-        'teal-lg': '0 0 48px rgba(0,200,232,0.25)',
-        'card': '0 1px 3px rgba(0,0,0,0.4), 0 0 0 1px rgba(26,46,74,0.6)',
-        'card-hover': '0 4px 24px rgba(0,0,0,0.5), 0 0 0 1px rgba(0,200,232,0.2)',
+        'card': '0 1px 3px rgba(0,0,0,0.07), 0 0 0 1px #D8E0EC',
+        'card-hover': '0 4px 20px rgba(0,0,0,0.10), 0 0 0 1px rgba(8,145,178,0.35)',
+        'card-dark': '0 1px 4px rgba(0,0,0,0.4), 0 0 0 1px rgba(26,46,74,0.8)',
+        'panel': '0 8px 30px rgba(0,0,0,0.08), 0 0 0 1px #D8E0EC',
       },
       transitionTimingFunction: {
         'expo-out': 'cubic-bezier(0.16, 1, 0.3, 1)',

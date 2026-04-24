@@ -31,32 +31,36 @@ type ButtonAsLink = ButtonBaseProps &
 type ButtonProps = ButtonAsButton | ButtonAsLink
 
 const variantClasses: Record<ButtonVariant, string> = {
+  // Refined teal — works on both dark and light backgrounds
   primary: [
-    'bg-teal text-navy-900 font-semibold',
-    'hover:bg-teal-bright hover:shadow-teal-md',
-    'active:bg-teal',
+    'bg-teal text-white font-semibold',
+    'hover:bg-teal-dim',
+    'active:bg-teal-dim',
     'disabled:opacity-50 disabled:cursor-not-allowed',
-    'transition-all duration-200',
+    'transition-colors duration-200',
   ].join(' '),
 
+  // Dark surface — for use on dark sections (hero, CTA)
   secondary: [
     'bg-navy-700 text-slate-100 font-medium',
     'border border-navy-border',
-    'hover:border-teal/40 hover:bg-navy-600 hover:text-white',
+    'hover:border-teal/30 hover:bg-navy-600 hover:text-white',
     'active:bg-navy-700',
     'transition-all duration-200',
   ].join(' '),
 
+  // Clean outline — works on both contexts
   outline: [
-    'bg-transparent text-teal font-medium',
-    'border border-teal/40',
-    'hover:border-teal hover:bg-teal/5 hover:shadow-teal-sm',
+    'bg-transparent font-medium',
+    'border border-teal/40 text-teal',
+    'hover:border-teal hover:bg-teal/5',
     'active:bg-teal/10',
     'transition-all duration-200',
   ].join(' '),
 
+  // Ghost — dark context
   ghost: [
-    'bg-transparent text-slate-300 font-medium',
+    'bg-transparent text-slate-400 font-medium',
     'hover:text-white hover:bg-navy-700',
     'active:bg-navy-800',
     'transition-all duration-200',
@@ -70,7 +74,7 @@ const sizeClasses: Record<ButtonSize, string> = {
 }
 
 const baseClasses =
-  'inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900'
+  'inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2 focus-visible:ring-offset-white'
 
 export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>(
   function Button(props, ref) {

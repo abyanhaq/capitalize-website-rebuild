@@ -19,19 +19,16 @@ const fade = (delay = 0) => ({
 export function HeroSection() {
   return (
     <section className="relative min-h-[88vh] flex items-center overflow-hidden bg-navy-900">
-      {/* Subtle grid — very light */}
-      <div className="absolute inset-0 bg-grid opacity-20 pointer-events-none" />
-
-      {/* Single, restrained glow — top left only */}
-      <div className="absolute -top-60 -left-60 w-[640px] h-[640px] rounded-full bg-teal/5 blur-[160px] pointer-events-none" />
+      {/* Precision grid — very subtle */}
+      <div className="absolute inset-0 bg-grid pointer-events-none" />
 
       <div className="container-wide relative z-10 py-32 lg:py-40">
         <div className="max-w-3xl">
 
           {/* Eyebrow */}
           <motion.div {...fade(0)} className="mb-8">
-            <p className="data-label mb-1">Capitalize Analytics</p>
-            <p className="text-xs text-slate-500 tracking-wide">AI &amp; Data Consulting &nbsp;·&nbsp; Dallas &amp; Houston, TX</p>
+            <p className="section-label mb-1">Capitalize Analytics</p>
+            <p className="text-xs text-navy-border/80 tracking-wide font-sans" style={{ color: '#4A6278' }}>AI &amp; Data Consulting &nbsp;·&nbsp; Dallas &amp; Houston, TX</p>
           </motion.div>
 
           {/* Headline */}
@@ -42,11 +39,11 @@ export function HeroSection() {
             Empowering Organizations
             <br />
             to Realize Value from{' '}
-            <span className="text-gradient-teal">Data &amp; AI</span>
+            <span className="text-teal-bright">Data &amp; AI</span>
           </motion.h1>
 
           {/* Subheadline */}
-          <motion.p {...fade(0.16)} className="text-lg text-slate-400 leading-relaxed max-w-xl mb-10">
+          <motion.p {...fade(0.16)} className="text-lg leading-relaxed max-w-xl mb-10" style={{ color: '#8A9EBB' }}>
             A specialist consulting firm that bridges AI strategy and enterprise ROI —
             delivering analytics, automation, and data infrastructure
             so your teams work smarter, not harder.
@@ -62,14 +59,14 @@ export function HeroSection() {
             </Button>
           </motion.div>
 
-          {/* Stat pills — inline, no animation theater */}
+          {/* Stats */}
           <motion.div {...fade(0.3)}>
             <div className="h-px w-16 bg-navy-border mb-8" />
             <div className="flex flex-wrap gap-8">
               {STATS.map((s) => (
                 <div key={s.label}>
                   <p className="font-display text-2xl font-bold text-white">{s.value}</p>
-                  <p className="text-xs text-slate-500 mt-0.5 tracking-wide">{s.label}</p>
+                  <p className="text-xs mt-0.5 tracking-wide" style={{ color: '#4A6278' }}>{s.label}</p>
                 </div>
               ))}
             </div>

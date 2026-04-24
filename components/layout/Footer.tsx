@@ -10,13 +10,13 @@ const OFFICES = [
 function FooterSection({ label, items }: { label: string; items: { label: string; href: string }[] }) {
   return (
     <div>
-      <h3 className="mb-4 font-mono text-[10px] uppercase tracking-widest text-teal opacity-70">{label}</h3>
+      <h3 className="mb-4 font-sans text-[10px] font-medium uppercase tracking-widest text-teal opacity-60">{label}</h3>
       <ul className="space-y-2.5">
         {items.map((item) => (
           <li key={item.href}>
             <Link
               href={item.href}
-              className="text-sm text-slate-400 hover:text-white transition-colors duration-150 link-underline"
+              className="text-sm text-slate-500 hover:text-white transition-colors duration-150"
             >
               {item.label}
             </Link>
@@ -31,56 +31,52 @@ export function Footer() {
   return (
     <footer className="border-t border-navy-border bg-navy-950 mt-auto">
       <div className="container-wide py-16">
-        {/* Top row */}
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-5">
           {/* Brand */}
           <div className="lg:col-span-2 space-y-6">
-            {/* Logo */}
             <div className="flex items-center gap-2.5">
               <div className="relative h-8 w-8">
                 <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
-                  <rect width="32" height="32" rx="6" fill="#00C8E8" fillOpacity="0.12" />
+                  <rect width="32" height="32" rx="6" fill="#0891B2" fillOpacity="0.10" />
                   <path
                     d="M8 22L14 10L20 18L24 14"
-                    stroke="#00C8E8"
+                    stroke="#0891B2"
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
-                  <circle cx="24" cy="14" r="2" fill="#00C8E8" />
+                  <circle cx="24" cy="14" r="2" fill="#0891B2" />
                 </svg>
               </div>
               <div className="flex flex-col leading-none">
                 <span className="font-display text-base font-bold tracking-tight text-white">Capitalize</span>
-                <span className="font-mono text-[10px] tracking-widest text-teal uppercase opacity-80">Analytics</span>
+                <span className="font-sans text-[10px] tracking-widest text-teal uppercase font-medium opacity-70">Analytics</span>
               </div>
             </div>
 
-            <p className="text-sm text-slate-400 leading-relaxed max-w-xs">
+            <p className="text-sm text-slate-500 leading-relaxed max-w-xs">
               We make AI real for enterprise businesses. Not a generalist IT shop — a specialist
               that bridges AI hype and actual ROI.
             </p>
 
-            {/* Contact */}
             <div className="space-y-3">
-              <div className="flex items-center gap-2 text-sm text-slate-400">
+              <div className="flex items-center gap-2 text-sm text-slate-500">
                 <Phone className="h-3.5 w-3.5 text-teal flex-shrink-0" />
                 <a href="tel:2145313904" className="hover:text-white transition-colors">
                   (214) 531-3904
                 </a>
               </div>
-              <div className="flex items-center gap-2 text-sm text-slate-400">
+              <div className="flex items-center gap-2 text-sm text-slate-500">
                 <Clock className="h-3.5 w-3.5 text-teal flex-shrink-0" />
                 <span>Mon – Fri, 8:00 AM – 6:00 PM CT</span>
               </div>
             </div>
 
-            {/* Offices */}
             <div className="space-y-4">
               {OFFICES.map((office) => (
                 <div key={office.city} className="flex items-start gap-2">
                   <MapPin className="h-3.5 w-3.5 text-teal flex-shrink-0 mt-0.5" />
-                  <div className="text-sm text-slate-400 leading-relaxed">
+                  <div className="text-sm text-slate-500 leading-relaxed">
                     <span className="text-slate-300 font-medium">{office.city}</span>
                     <br />
                     {office.address}
@@ -117,10 +113,8 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="my-10 divider-teal" />
+        <div className="my-10 border-t border-navy-border/50" />
 
-        {/* Bottom row */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-slate-600">
             &copy; {new Date().getFullYear()} Capitalize Analytics. All rights reserved.

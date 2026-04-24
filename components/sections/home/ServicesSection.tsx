@@ -56,13 +56,13 @@ function ServiceCard({ service }: { service: typeof SERVICES[0] }) {
     <motion.div variants={staggerItem}>
       <Link
         href={service.href}
-        className="group flex flex-col h-full border border-navy-border bg-navy-800 rounded-xl p-7 transition-colors duration-200 hover:border-teal/30 hover:bg-navy-700 accent-bar overflow-hidden"
+        className="group flex flex-col h-full border border-paper-border bg-white rounded-xl p-7 transition-all duration-200 hover:border-teal/40 hover:shadow-card-hover overflow-hidden"
       >
         <div className="flex items-start justify-between mb-5">
-          <span className="font-mono text-xs text-teal/60 tracking-widest">{service.num}</span>
-          <ArrowRight className="h-4 w-4 text-navy-border transition-colors duration-200 group-hover:text-teal" />
+          <span className="font-mono text-xs text-teal/50 tracking-widest">{service.num}</span>
+          <ArrowRight className="h-4 w-4 text-slate-300 transition-colors duration-200 group-hover:text-teal" />
         </div>
-        <h3 className="font-display text-base font-semibold text-white mb-3 group-hover:text-teal transition-colors duration-200">
+        <h3 className="font-display text-base font-semibold text-slate-900 mb-3 group-hover:text-teal transition-colors duration-200">
           {service.label}
         </h3>
         <p className="text-sm text-slate-500 leading-relaxed flex-1">{service.desc}</p>
@@ -73,21 +73,20 @@ function ServiceCard({ service }: { service: typeof SERVICES[0] }) {
 
 export function ServicesSection() {
   return (
-    <section className="section-py bg-navy-800 border-y border-navy-border">
+    <section className="section-py bg-paper-50 border-y border-paper-border">
       <div className="container-wide">
-        {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
           <div>
             <AnimateOnView>
-              <p className="data-label mb-4">Capitalize Analytics — How We Help</p>
+              <p className="section-label mb-4">Capitalize Analytics — How We Help</p>
             </AnimateOnView>
             <AnimateOnView delay={0.05}>
-              <h2 className="font-display text-display-md font-bold text-white leading-tight">
+              <h2 className="font-display text-display-md font-bold text-slate-900 leading-tight">
                 Services &amp; Capabilities
               </h2>
             </AnimateOnView>
             <AnimateOnView delay={0.08}>
-              <p className="mt-3 text-slate-400 max-w-lg leading-relaxed">
+              <p className="mt-3 text-slate-500 max-w-lg leading-relaxed">
                 We help organizations turn disconnected data and manual processes into a connected
                 analytics ecosystem that drives smarter decisions every day.
               </p>
@@ -100,7 +99,6 @@ export function ServicesSection() {
           </AnimateOnView>
         </div>
 
-        {/* Grid */}
         <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {SERVICES.map((s) => (
             <ServiceCard key={s.href} service={s} />

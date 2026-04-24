@@ -35,15 +35,15 @@ const INSIGHTS = [
 
 export function InsightsSection() {
   return (
-    <section className="section-py bg-navy-800 border-y border-navy-border">
+    <section className="section-py bg-paper-50 border-b border-paper-border">
       <div className="container-wide">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
           <div>
             <AnimateOnView>
-              <p className="data-label mb-4">Capitalize Analytics — Insights</p>
+              <p className="section-label mb-4">Capitalize Analytics — Insights</p>
             </AnimateOnView>
             <AnimateOnView delay={0.05}>
-              <h2 className="font-display text-display-md font-bold text-white">
+              <h2 className="font-display text-display-md font-bold text-slate-900">
                 From Our Practitioners
               </h2>
             </AnimateOnView>
@@ -62,16 +62,16 @@ export function InsightsSection() {
                 href={insight.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col h-full border border-navy-border rounded-xl p-6 bg-navy-900 transition-colors duration-200 hover:border-teal/25 hover:bg-navy-800"
+                className="group flex flex-col h-full border border-paper-border rounded-xl p-6 bg-white transition-all duration-200 hover:border-teal/40 hover:shadow-card-hover"
               >
-                <p className="font-mono text-[10px] uppercase tracking-widest text-slate-600 mb-4">
+                <p className="font-sans text-[10px] font-medium uppercase tracking-widest text-teal mb-4">
                   {insight.type}
                 </p>
-                <h3 className="font-display text-sm font-semibold text-white mb-3 leading-snug group-hover:text-teal transition-colors duration-200 flex-1">
+                <h3 className="font-display text-sm font-semibold text-slate-900 mb-3 leading-snug group-hover:text-teal transition-colors duration-200 flex-1">
                   {insight.title}
                 </h3>
                 <p className="text-xs text-slate-500 leading-relaxed mb-5">{insight.desc}</p>
-                <div className="flex items-center gap-1.5 text-xs text-slate-500 group-hover:text-teal transition-colors duration-200">
+                <div className="flex items-center gap-1.5 text-xs text-slate-400 group-hover:text-teal transition-colors duration-200">
                   Read More <ArrowRight className="h-3 w-3" />
                 </div>
               </Link>

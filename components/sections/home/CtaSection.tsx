@@ -6,10 +6,10 @@ export function CtaSection() {
   return (
     <section className="py-24 bg-navy-900 border-t border-navy-border">
       <div className="container-narrow">
-        <div className="h-px w-12 bg-teal/50 mb-12" />
+        <div className="h-px w-12 bg-teal/30 mb-12" />
 
         <AnimateOnView>
-          <p className="data-label mb-6">Capitalize Analytics</p>
+          <p className="section-label mb-6" style={{ color: '#22D3EE', opacity: 0.7 }}>Capitalize Analytics</p>
         </AnimateOnView>
 
         <AnimateOnView delay={0.05}>
@@ -19,7 +19,7 @@ export function CtaSection() {
         </AnimateOnView>
 
         <AnimateOnView delay={0.1}>
-          <p className="text-lg text-slate-400 mb-10 leading-relaxed max-w-xl">
+          <p className="text-lg mb-10 leading-relaxed max-w-xl" style={{ color: '#8A9EBB' }}>
             Whether you&apos;re modernizing your data platform, building an AI use case, or
             automating workflows — our team works alongside yours from day one through adoption.
           </p>
@@ -37,7 +37,7 @@ export function CtaSection() {
         </AnimateOnView>
 
         <AnimateOnView delay={0.15}>
-          <div className="flex flex-wrap gap-8 text-sm text-slate-500">
+          <div className="flex flex-wrap gap-8 text-sm" style={{ color: '#4A6278' }}>
             <a href="tel:2145313904" className="flex items-center gap-2 hover:text-slate-300 transition-colors">
               <Phone className="h-3.5 w-3.5 text-teal" />
               (214) 531-3904
