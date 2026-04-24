@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Design Tokens ──────────────────────────────────────────────────── */
+:root {
+  --bg-base:          #070D1A;
+  --bg-surface:       #0C1526;
+  --bg-elevated:      #111E38;
+  --border-default:   #1A2E4A;
+  --border-subtle:    #0F1E35;
+  --teal:             #00C8E8;
+  --teal-bright:      #3DDFFF;
+  --teal-glow:        rgba(0, 200, 232, 0.15);
+  --text-primary:     #F0F4FF;
+  --text-secondary:   #8BA3C0;
+  --text-muted:       #4A6080;
+}
+
+/* ─── Base Reset ─────────────────────────────────────────────────────── */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+    border-color: theme('colors.navy.border');
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-navy-900 text-slate-100 font-sans;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    min-height: 100dvh;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--bg-base);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--border-default);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--teal-dim, #007A90);
+  }
+
+  ::selection {
+    background: rgba(0, 200, 232, 0.25);
+    color: #fff;
+  }
+
+  /* Focus ring */
+  :focus-visible {
+    outline: 2px solid var(--teal);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+    color: var(--text-primary);
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+/* ─── Utilities ──────────────────────────────────────────────────────── */
+@layer utilities {
+  /* Teal gradient text */
+  .text-gradient-teal {
+    background: linear-gradient(135deg, #3DDFFF 0%, #00C8E8 40%, #007A90 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Subtle noise overlay */
+  .noise-overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+  /* Grid background pattern */
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(26,46,74,0.4) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(26,46,74,0.4) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .bg-grid-sm {
+    background-image:
+      linear-gradient(rgba(26,46,74,0.3) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(26,46,74,0.3) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  /* Glassy surface */
+  .glass {
+    background: rgba(12, 21, 38, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(26, 46, 74, 0.8);
+  }
+
+  .glass-light {
+    background: rgba(17, 30, 56, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(26, 46, 74, 0.5);
+  }
+
+  /* Teal glow effects */
+  .glow-teal-sm {
+    box-shadow: 0 0 12px rgba(0, 200, 232, 0.15);
+  }
+
+  .glow-teal {
+    box-shadow: 0 0 24px rgba(0, 200, 232, 0.2), 0 0 48px rgba(0, 200, 232, 0.08);
+  }
+
+  /* Horizontal teal line separator */
+  .divider-teal {
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, #00C8E8 50%, transparent 100%);
+    opacity: 0.3;
+  }
+
+  /* Container variants */
+  .container-narrow {
+    @apply mx-auto max-w-4xl px-6 lg:px-8;
+  }
+
+  .container-wide {
+    @apply mx-auto max-w-7xl px-6 lg:px-8;
+  }
+
+  /* Section spacing */
+  .section-py {
+    @apply py-20 lg:py-28;
+  }
+
+  .section-py-sm {
+    @apply py-14 lg:py-20;
+  }
+
+  /* Teal dot indicator */
+  .dot-teal {
+    @apply inline-block h-1.5 w-1.5 rounded-full bg-teal;
+  }
+
+  /* Animated underline on hover */
+  .link-underline {
+    position: relative;
+  }
+  .link-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--teal);
+    transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .link-underline:hover::after {
+    width: 100%;
+  }
+
+  /* Monospace data label */
+  .data-label {
+    @apply font-mono text-xs tracking-widest uppercase text-teal opacity-80;
+  }
+}

@@ -1,0 +1,921 @@
+{
+  "site": "Capitalize Analytics",
+  "domain": "https://capitalizeconsulting.com",
+  "crawled_at": "2026-04-23",
+  "note": "Body copy is primarily sourced from meta descriptions; the site uses Elementor with JavaScript-rendered content that is not accessible in static HTML.",
+  "global_nav": {
+    "primary": [
+      { "label": "Who We Are", "url": "/who-we-are/" },
+      { "label": "What We Do", "url": "/what-we-do/" },
+      { "label": "Careers",    "url": "/careers/" }
+    ],
+    "how_we_help": [
+      { "label": "AI & Advanced Analytics",      "url": "/ai-and-advanced-analytics/" },
+      { "label": "Business Intelligence",         "url": "/business-intelligence/" },
+      { "label": "Data Engineering & Integration","url": "/data-engineering-integration/" },
+      { "label": "Data Strategy & Advisory",      "url": "/data-strategy-advisory/" },
+      { "label": "Process Automation",            "url": "/process-automation/" },
+      { "label": "Managed Services",              "url": "/managed-services/" },
+      { "label": "Training",                      "url": "/training/" }
+    ],
+    "who_we_help_functional": [
+      { "label": "Accounting",              "url": "/accounting/" },
+      { "label": "Audit",                   "url": "/audit/" },
+      { "label": "Financial Planning & Analysis", "url": "/financial-planning-analysis/" },
+      { "label": "Tax Analytics",           "url": "/tax-analytics-consulting/" },
+      { "label": "Technology (IT)",         "url": "/technology-it-consulting/" },
+      { "label": "Sales & Marketing",       "url": "/sales-marketing-analytics-consulting/" },
+      { "label": "Supply Chain",            "url": "/supply-chain-analytics/" },
+      { "label": "HR & Workforce Analytics","url": "/hr-workforce-analytics/" }
+    ],
+    "who_we_help_industries": [
+      { "label": "Distribution",       "url": "/distribution-analytics/" },
+      { "label": "Financial Services", "url": "/financial-services-consulting/" },
+      { "label": "Healthcare",         "url": "/healthcare-analytics/" },
+      { "label": "Manufacturing",      "url": "/manufacturing-analytics/" },
+      { "label": "Oil & Gas",          "url": "/oil-gas-analytics-consulting/" },
+      { "label": "Hospitality",        "url": "/hospitality-analytics-consutling/" },
+      { "label": "Retail",             "url": "/retail-analytics-consulting/" },
+      { "label": "Education",          "url": "/education-analytics-consulting/" },
+      { "label": "Government",         "url": "/government-analytics-consutling/" }
+    ],
+    "insights": [
+      { "label": "Blog",     "url": "/blog/" },
+      { "label": "Webinars", "url": "/webinar/" }
+    ],
+    "products": [
+      { "label": "iGB",                         "url": "/igb/" },
+      { "label": "Watchtower",                  "url": "/watchtower" },
+      { "label": "Workflow Admin Manager (WAM)", "url": "/workflow-admin-manager/" }
+    ]
+  },
+  "pages": [
+    {
+      "url": "https://capitalizeconsulting.com/",
+      "slug": "/",
+      "section": "Core",
+      "title": "Home - Capitalize Analytics",
+      "meta_description": "Capitalize is a data and analytics consulting firm delivering automation and AI solutions that enable smarter decisions and scalable business impact.",
+      "headings": [
+        { "level": "h2", "text": "About us" },
+        { "level": "h2", "text": "How We Help" },
+        { "level": "h2", "text": "Who We Help" },
+        { "level": "h2", "text": "Insights" },
+        { "level": "h2", "text": "Our Products" },
+        { "level": "h2", "text": "Technologies" }
+      ],
+      "body_copy": [
+        "Capitalize is a data and analytics consulting firm delivering automation and AI solutions that enable smarter decisions and scalable business impact."
+      ],
+      "ctas": [
+        { "label": "Who We Are",   "url": "/who-we-are/" },
+        { "label": "What We Do",   "url": "/what-we-do/" },
+        { "label": "Careers",      "url": "/careers/" },
+        { "label": "Blog",         "url": "/blog/" },
+        { "label": "Webinars",     "url": "/webinar/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/", "/careers/",
+        "/ai-and-advanced-analytics/", "/business-intelligence/",
+        "/data-engineering-integration/", "/data-strategy-advisory/",
+        "/process-automation/", "/managed-services/", "/training/",
+        "/accounting/", "/audit/", "/financial-planning-analysis/",
+        "/tax-analytics-consulting/", "/technology-it-consulting/",
+        "/sales-marketing-analytics-consulting/", "/supply-chain-analytics/",
+        "/hr-workforce-analytics/",
+        "/distribution-analytics/", "/financial-services-consulting/",
+        "/healthcare-analytics/", "/manufacturing-analytics/",
+        "/oil-gas-analytics-consulting/", "/hospitality-analytics-consutling/",
+        "/retail-analytics-consulting/", "/education-analytics-consulting/",
+        "/government-analytics-consutling/",
+        "/blog/", "/webinar/",
+        "/igb/", "/watchtower", "/workflow-admin-manager/"
+      ],
+      "contact": {
+        "phone": "(214) 531-3904",
+        "hours": "Monday–Friday, 8:00 AM – 6:00 PM",
+        "locations": [
+          "3131 McKinney Ave Suite 648F, Dallas, TX 75204",
+          "2101 CityWest Blvd #232, Houston, TX 77042"
+        ]
+      }
+    },
+    {
+      "url": "https://capitalizeconsulting.com/who-we-are/",
+      "slug": "/who-we-are/",
+      "section": "Core",
+      "title": "Who We Are - Capitalize Analytics",
+      "meta_description": null,
+      "headings": [
+        { "level": "h1", "text": "Who We Are" }
+      ],
+      "body_copy": [],
+      "ctas": [
+        { "label": "What We Do", "url": "/what-we-do/" },
+        { "label": "Careers",    "url": "/careers/" }
+      ],
+      "internal_links": [
+        "/what-we-do/", "/careers/", "/blog/", "/webinar/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/what-we-do/",
+      "slug": "/what-we-do/",
+      "section": "Core",
+      "title": "What We Do - Capitalize Analytics",
+      "meta_description": "Learn how we help organizations turn data into smarter decisions with analytics, automation, and integration that drive real, measurable business impact.",
+      "headings": [
+        { "level": "h1", "text": "What We Do" }
+      ],
+      "body_copy": [
+        "Learn how we help organizations turn data into smarter decisions with analytics, automation, and integration that drive real, measurable business impact."
+      ],
+      "ctas": [
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "Careers",    "url": "/careers/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/careers/",
+        "/ai-and-advanced-analytics/", "/business-intelligence/",
+        "/data-engineering-integration/", "/data-strategy-advisory/",
+        "/process-automation/", "/managed-services/", "/training/",
+        "/blog/", "/webinar/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/careers/",
+      "slug": "/careers/",
+      "section": "Core",
+      "title": "Careers - Capitalize Analytics",
+      "meta_description": "Rewarding opportunities with a collaborative consulting team dedicated to analytics excellence, automation innovation, and client impact.",
+      "headings": [
+        { "level": "h1", "text": "Careers" }
+      ],
+      "body_copy": [
+        "Rewarding opportunities with a collaborative consulting team dedicated to analytics excellence, automation innovation, and client impact."
+      ],
+      "ctas": [
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/", "/blog/", "/webinar/",
+        "/ai-and-advanced-analytics/", "/business-intelligence/",
+        "/data-engineering-integration/", "/data-strategy-advisory/",
+        "/process-automation/", "/managed-services/", "/training/"
+      ]
+    },
+
+    {
+      "url": "https://capitalizeconsulting.com/ai-and-advanced-analytics/",
+      "slug": "/ai-and-advanced-analytics/",
+      "section": "How We Help",
+      "title": "AI & Advanced Analytics - Capitalize Analytics",
+      "meta_description": "Turn AI and advanced analytics into ROI with ideation workshops, 45-day pilots, and governed data, ML, and automation strategies.",
+      "headings": [
+        { "level": "h1", "text": "AI & Advanced Analytics" }
+      ],
+      "body_copy": [
+        "Turn AI and advanced analytics into ROI with ideation workshops, 45-day pilots, and governed data, ML, and automation strategies."
+      ],
+      "ctas": [
+        { "label": "Business Intelligence",          "url": "/business-intelligence/" },
+        { "label": "Data Engineering & Integration", "url": "/data-engineering-integration/" },
+        { "label": "Data Strategy & Advisory",       "url": "/data-strategy-advisory/" },
+        { "label": "Process Automation",             "url": "/process-automation/" },
+        { "label": "Managed Services",               "url": "/managed-services/" },
+        { "label": "Training",                       "url": "/training/" }
+      ],
+      "internal_links": [
+        "/business-intelligence/", "/data-engineering-integration/",
+        "/data-strategy-advisory/", "/process-automation/",
+        "/managed-services/", "/training/", "/blog/", "/webinar/",
+        "/igb/", "/watchtower/", "/workflow-admin-manager/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/business-intelligence/",
+      "slug": "/business-intelligence/",
+      "section": "How We Help",
+      "title": "Business Intelligence - Capitalize Analytics",
+      "meta_description": "Business intelligence consulting to turn data into insight, strengthen reporting, and support smarter, data-driven decisions across your organization.",
+      "headings": [
+        { "level": "h1", "text": "Business Intelligence" }
+      ],
+      "body_copy": [
+        "Business intelligence consulting to turn data into insight, strengthen reporting, and support smarter, data-driven decisions across your organization."
+      ],
+      "ctas": [
+        { "label": "AI & Advanced Analytics",        "url": "/ai-and-advanced-analytics/" },
+        { "label": "Data Engineering & Integration", "url": "/data-engineering-integration/" },
+        { "label": "Data Strategy & Advisory",       "url": "/data-strategy-advisory/" },
+        { "label": "Process Automation",             "url": "/process-automation/" },
+        { "label": "Managed Services",               "url": "/managed-services/" },
+        { "label": "Training",                       "url": "/training/" }
+      ],
+      "internal_links": [
+        "/ai-and-advanced-analytics/", "/data-engineering-integration/",
+        "/data-strategy-advisory/", "/process-automation/",
+        "/managed-services/", "/training/", "/blog/", "/webinar/",
+        "/igb/", "/watchtower/", "/workflow-admin-manager/",
+        "/accounting/", "/audit/", "/financial-planning-analysis/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/data-engineering-integration/",
+      "slug": "/data-engineering-integration/",
+      "section": "How We Help",
+      "title": "Data Engineering & Integration - Capitalize Analytics",
+      "meta_description": "Data engineering and integration consulting to unify data systems, improve pipelines, and enable analytics-ready data across your organization.",
+      "headings": [
+        { "level": "h1", "text": "Data Engineering & Integration" }
+      ],
+      "body_copy": [
+        "Data engineering and integration consulting to unify data systems, improve pipelines, and enable analytics-ready data across your organization."
+      ],
+      "ctas": [
+        { "label": "AI & Advanced Analytics",  "url": "/ai-and-advanced-analytics/" },
+        { "label": "Business Intelligence",    "url": "/business-intelligence/" },
+        { "label": "Data Strategy & Advisory", "url": "/data-strategy-advisory/" },
+        { "label": "Process Automation",       "url": "/process-automation/" },
+        { "label": "Managed Services",         "url": "/managed-services/" },
+        { "label": "Training",                 "url": "/training/" }
+      ],
+      "internal_links": [
+        "/ai-and-advanced-analytics/", "/business-intelligence/",
+        "/data-strategy-advisory/", "/process-automation/",
+        "/managed-services/", "/training/", "/blog/", "/webinar/",
+        "/igb/", "/watchtower", "/workflow-admin-manager/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/data-strategy-advisory/",
+      "slug": "/data-strategy-advisory/",
+      "section": "How We Help",
+      "title": "Data Strategy & Advisory - Capitalize Analytics",
+      "meta_description": null,
+      "headings": [
+        { "level": "h1", "text": "Data Strategy & Advisory" }
+      ],
+      "body_copy": [],
+      "ctas": [
+        { "label": "AI & Advanced Analytics",        "url": "/ai-and-advanced-analytics/" },
+        { "label": "Business Intelligence",          "url": "/business-intelligence/" },
+        { "label": "Data Engineering & Integration", "url": "/data-engineering-integration/" },
+        { "label": "Process Automation",             "url": "/process-automation/" },
+        { "label": "Managed Services",               "url": "/managed-services/" },
+        { "label": "Training",                       "url": "/training/" }
+      ],
+      "internal_links": [
+        "/ai-and-advanced-analytics/", "/business-intelligence/",
+        "/data-engineering-integration/", "/process-automation/",
+        "/managed-services/", "/training/", "/blog/", "/webinar/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/process-automation/",
+      "slug": "/process-automation/",
+      "section": "How We Help",
+      "title": "Process Automation - Capitalize Analytics",
+      "meta_description": "Process automation consulting to streamline workflows, reduce manual effort, and accelerate business outcomes.",
+      "headings": [
+        { "level": "h1", "text": "Process Automation" }
+      ],
+      "body_copy": [
+        "Process automation consulting to streamline workflows, reduce manual effort, and accelerate business outcomes."
+      ],
+      "ctas": [
+        { "label": "AI & Advanced Analytics",        "url": "/ai-and-advanced-analytics/" },
+        { "label": "Business Intelligence",          "url": "/business-intelligence/" },
+        { "label": "Data Engineering & Integration", "url": "/data-engineering-integration/" },
+        { "label": "Data Strategy & Advisory",       "url": "/data-strategy-advisory/" },
+        { "label": "Managed Services",               "url": "/managed-services/" },
+        { "label": "Training",                       "url": "/training/" }
+      ],
+      "internal_links": [
+        "/ai-and-advanced-analytics/", "/business-intelligence/",
+        "/data-engineering-integration/", "/data-strategy-advisory/",
+        "/managed-services/", "/training/", "/blog/", "/webinar/",
+        "/igb/", "/watchtower", "/workflow-admin-manager/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/managed-services/",
+      "slug": "/managed-services/",
+      "section": "How We Help",
+      "title": "Managed Services - Capitalize Analytics",
+      "meta_description": null,
+      "headings": [
+        { "level": "h1", "text": "Managed Services" }
+      ],
+      "body_copy": [],
+      "ctas": [
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" },
+        { "label": "Blog",       "url": "/blog/" },
+        { "label": "Webinars",   "url": "/webinar/" },
+        { "label": "iGB",        "url": "/igb/" },
+        { "label": "Watchtower", "url": "/watchtower" },
+        { "label": "Workflow Admin Manager (WAM)", "url": "/workflow-admin-manager/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/",
+        "/ai-and-advanced-analytics/", "/business-intelligence/",
+        "/data-engineering-integration/", "/data-strategy-advisory/",
+        "/process-automation/", "/training/",
+        "/blog/", "/webinar/",
+        "/igb/", "/watchtower", "/workflow-admin-manager/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/training/",
+      "slug": "/training/",
+      "section": "How We Help",
+      "title": "Training - Capitalize Analytics",
+      "meta_description": "Expert-led training to help teams build skills in analytics, automation, and AI—designed to drive adoption, confidence, and real outcomes.",
+      "headings": [
+        { "level": "h1", "text": "Training" }
+      ],
+      "body_copy": [
+        "Expert-led training to help teams build skills in analytics, automation, and AI—designed to drive adoption, confidence, and real outcomes."
+      ],
+      "ctas": [
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/",
+        "/ai-and-advanced-analytics/", "/business-intelligence/",
+        "/data-engineering-integration/", "/data-strategy-advisory/",
+        "/process-automation/", "/managed-services/",
+        "/blog/", "/webinar/"
+      ]
+    },
+
+    {
+      "url": "https://capitalizeconsulting.com/igb/",
+      "slug": "/igb/",
+      "section": "Products",
+      "title": "Intelligent Gas Balancing (iGB) - Capitalize Analytics",
+      "meta_description": null,
+      "headings": [
+        { "level": "h1", "text": "Intelligent Gas Balancing (iGB)" }
+      ],
+      "body_copy": [],
+      "ctas": [
+        { "label": "Watchtower",                  "url": "/watchtower" },
+        { "label": "Workflow Admin Manager (WAM)", "url": "/workflow-admin-manager/" },
+        { "label": "Blog",                        "url": "/blog/" },
+        { "label": "Webinars",                    "url": "/webinar/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/", "/careers/",
+        "/ai-and-advanced-analytics/", "/business-intelligence/",
+        "/data-engineering-integration/", "/training/",
+        "/blog/", "/webinar/",
+        "/watchtower", "/workflow-admin-manager/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/watchtower",
+      "slug": "/watchtower",
+      "section": "Products",
+      "title": "Watchtower - Capitalize Analytics",
+      "meta_description": "Learn how Watchtower strengthens analytics governance with automated monitoring, alerting, and insights to help teams ensure data quality and reliability.",
+      "headings": [
+        { "level": "h1", "text": "Watchtower" }
+      ],
+      "body_copy": [
+        "Watchtower strengthens analytics governance with automated monitoring, alerting, and insights to help teams ensure data quality and reliability."
+      ],
+      "ctas": [
+        { "label": "iGB",                         "url": "/igb/" },
+        { "label": "Workflow Admin Manager (WAM)", "url": "/workflow-admin-manager/" },
+        { "label": "Blog",                        "url": "/blog/" },
+        { "label": "Webinars",                    "url": "/webinar/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/",
+        "/ai-and-advanced-analytics/", "/business-intelligence/",
+        "/data-engineering-integration/", "/data-strategy-advisory/",
+        "/process-automation/", "/managed-services/", "/training/",
+        "/blog/", "/webinar/",
+        "/igb/", "/workflow-admin-manager/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/workflow-admin-manager/",
+      "slug": "/workflow-admin-manager/",
+      "section": "Products",
+      "title": "Workflow Admin Manager (WAM) - Capitalize Analytics",
+      "meta_description": null,
+      "headings": [
+        { "level": "h1", "text": "Workflow Admin Manager (WAM)" }
+      ],
+      "body_copy": [],
+      "ctas": [
+        { "label": "iGB",        "url": "/igb/" },
+        { "label": "Watchtower", "url": "/watchtower" },
+        { "label": "Blog",       "url": "/blog/" },
+        { "label": "Webinars",   "url": "/webinar/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/", "/careers/",
+        "/blog/", "/webinar/",
+        "/igb/", "/watchtower"
+      ]
+    },
+
+    {
+      "url": "https://capitalizeconsulting.com/accounting/",
+      "slug": "/accounting/",
+      "section": "Who We Help – Functional",
+      "title": "Accounting - Capitalize Analytics",
+      "meta_description": "Analytics consulting for accounting teams to optimize close processes, reduce manual work, and unlock actionable financial insights.",
+      "headings": [
+        { "level": "h1", "text": "Accounting" }
+      ],
+      "body_copy": [
+        "Analytics consulting for accounting teams to optimize close processes, reduce manual work, and unlock actionable financial insights."
+      ],
+      "ctas": [
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" },
+        { "label": "Blog",       "url": "/blog/" },
+        { "label": "Webinars",   "url": "/webinar/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/", "/blog/", "/webinar/",
+        "/business-intelligence/", "/data-strategy-advisory/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/audit/",
+      "slug": "/audit/",
+      "section": "Who We Help – Functional",
+      "title": "Audit - Capitalize Analytics",
+      "meta_description": "Audit consulting services to strengthen governance, improve reporting accuracy, and deliver trusted insights through rigorous analytics and review.",
+      "headings": [
+        { "level": "h1", "text": "Audit" }
+      ],
+      "body_copy": [
+        "Audit consulting services to strengthen governance, improve reporting accuracy, and deliver trusted insights through rigorous analytics and review."
+      ],
+      "ctas": [
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" },
+        { "label": "Blog",       "url": "/blog/" },
+        { "label": "Webinars",   "url": "/webinar/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/", "/blog/", "/webinar/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/financial-planning-analysis/",
+      "slug": "/financial-planning-analysis/",
+      "section": "Who We Help – Functional",
+      "title": "Financial Planning & Analysis - Capitalize Analytics",
+      "meta_description": "We help finance teams modernize FP&A with analytics and automation to improve forecasting, reporting, and data-driven decision-making.",
+      "headings": [
+        { "level": "h1", "text": "Financial Planning & Analysis" }
+      ],
+      "body_copy": [
+        "We help finance teams modernize FP&A with analytics and automation to improve forecasting, reporting, and data-driven decision-making."
+      ],
+      "ctas": [
+        { "label": "Careers",    "url": "/careers/" },
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" }
+      ],
+      "internal_links": [
+        "/careers/", "/who-we-are/", "/what-we-do/",
+        "/ai-and-advanced-analytics/", "/business-intelligence/",
+        "/data-engineering-integration/", "/data-strategy-advisory/",
+        "/process-automation/", "/managed-services/", "/training/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/tax-analytics-consulting/",
+      "slug": "/tax-analytics-consulting/",
+      "section": "Who We Help – Functional",
+      "title": "Tax Analytics Consulting - Capitalize Analytics",
+      "meta_description": "Tax analytics consulting to improve tax data insights, streamline reporting, and support smarter decision-making with analytics and automation.",
+      "headings": [
+        { "level": "h1", "text": "Tax Analytics Consulting" }
+      ],
+      "body_copy": [
+        "Tax analytics consulting to improve tax data insights, streamline reporting, and support smarter decision-making with analytics and automation."
+      ],
+      "ctas": [
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/technology-it-consulting/",
+      "slug": "/technology-it-consulting/",
+      "section": "Who We Help – Functional",
+      "title": "Technology (IT) Analytics Consulting - Capitalize Analytics",
+      "meta_description": "IT analytics consulting to strengthen data strategy, streamline reporting, and enable smarter decisions with analytics, automation, and governance.",
+      "headings": [
+        { "level": "h1", "text": "Technology (IT) Analytics Consulting" }
+      ],
+      "body_copy": [
+        "IT analytics consulting to strengthen data strategy, streamline reporting, and enable smarter decisions with analytics, automation, and governance."
+      ],
+      "ctas": [
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" },
+        { "label": "Blog",       "url": "/blog/" },
+        { "label": "Webinars",   "url": "/webinar/" },
+        { "label": "iGB",        "url": "/igb/" },
+        { "label": "Watchtower", "url": "/watchtower" },
+        { "label": "Workflow Admin Manager (WAM)", "url": "/workflow-admin-manager/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/", "/blog/", "/webinar/",
+        "/igb/", "/watchtower", "/workflow-admin-manager/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/sales-marketing-analytics-consulting/",
+      "slug": "/sales-marketing-analytics-consulting/",
+      "section": "Who We Help – Functional",
+      "title": "Sales & Marketing Analytics Consulting - Capitalize Analytics",
+      "meta_description": "Sales & marketing analytics consulting to improve data insights, strengthen performance measurement, and drive smarter, data-informed decisions.",
+      "headings": [
+        { "level": "h1", "text": "Sales & Marketing Analytics Consulting" }
+      ],
+      "body_copy": [
+        "Sales & marketing analytics consulting to improve data insights, strengthen performance measurement, and drive smarter, data-informed decisions."
+      ],
+      "ctas": [
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" },
+        { "label": "Blog",       "url": "/blog/" },
+        { "label": "Webinars",   "url": "/webinar/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/", "/blog/", "/webinar/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/supply-chain-analytics/",
+      "slug": "/supply-chain-analytics/",
+      "section": "Who We Help – Functional",
+      "title": "Supply Chain Analytics - Capitalize Analytics",
+      "meta_description": "Expert supply chain analytics services that strengthen forecasts, enhance workflows, and unlock actionable insights for better performance.",
+      "headings": [
+        { "level": "h1", "text": "Supply Chain Analytics" }
+      ],
+      "body_copy": [
+        "Expert supply chain analytics services that strengthen forecasts, enhance workflows, and unlock actionable insights for better performance."
+      ],
+      "ctas": [
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" },
+        { "label": "AI & Advanced Analytics",        "url": "/ai-and-advanced-analytics/" },
+        { "label": "Business Intelligence",          "url": "/business-intelligence/" },
+        { "label": "Data Engineering & Integration", "url": "/data-engineering-integration/" },
+        { "label": "Data Strategy & Advisory",       "url": "/data-strategy-advisory/" },
+        { "label": "Process Automation",             "url": "/process-automation/" },
+        { "label": "Managed Services",               "url": "/managed-services/" },
+        { "label": "Training",                       "url": "/training/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/",
+        "/ai-and-advanced-analytics/", "/business-intelligence/",
+        "/data-engineering-integration/", "/data-strategy-advisory/",
+        "/process-automation/", "/managed-services/", "/training/",
+        "/blog/", "/webinar/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/hr-workforce-analytics/",
+      "slug": "/hr-workforce-analytics/",
+      "section": "Who We Help – Functional",
+      "title": "HR & Workforce Analytics - Capitalize Analytics",
+      "meta_description": "HR & workforce analytics consulting to improve people insights, strengthen workforce planning, and drive data-informed decisions across your organization.",
+      "headings": [
+        { "level": "h1", "text": "HR & Workforce Analytics" }
+      ],
+      "body_copy": [
+        "HR & workforce analytics consulting to improve people insights, strengthen workforce planning, and drive data-informed decisions across your organization."
+      ],
+      "ctas": [
+        { "label": "Careers",    "url": "/careers/" },
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" },
+        { "label": "Blog",       "url": "/blog/" },
+        { "label": "Webinars",   "url": "/webinar/" }
+      ],
+      "internal_links": [
+        "/careers/", "/who-we-are/", "/what-we-do/", "/blog/", "/webinar/"
+      ]
+    },
+
+    {
+      "url": "https://capitalizeconsulting.com/distribution-analytics/",
+      "slug": "/distribution-analytics/",
+      "section": "Who We Help – Industry",
+      "title": "Distribution Analytics - Capitalize Analytics",
+      "meta_description": "Distribution analytics consulting to improve data insights, streamline operations, and support smarter decisions with analytics and automation.",
+      "headings": [
+        { "level": "h1", "text": "Distribution Analytics" }
+      ],
+      "body_copy": [
+        "Distribution analytics consulting to improve data insights, streamline operations, and support smarter decisions with analytics and automation."
+      ],
+      "ctas": [
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" },
+        { "label": "Blog",       "url": "/blog/" },
+        { "label": "Webinars",   "url": "/webinar/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/", "/blog/", "/webinar/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/financial-services-consulting/",
+      "slug": "/financial-services-consulting/",
+      "section": "Who We Help – Industry",
+      "title": "Financial Services Consulting - Capitalize Analytics",
+      "meta_description": "Financial services consulting to strengthen data analytics, streamline reporting, and drive smarter decisions across finance, risk, and operations.",
+      "headings": [
+        { "level": "h1", "text": "Financial Services Consulting" }
+      ],
+      "body_copy": [
+        "Financial services consulting to strengthen data analytics, streamline reporting, and drive smarter decisions across finance, risk, and operations."
+      ],
+      "ctas": [
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" },
+        { "label": "Blog",       "url": "/blog/" },
+        { "label": "Webinars",   "url": "/webinar/" },
+        { "label": "Careers",    "url": "/careers/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/", "/careers/", "/blog/", "/webinar/",
+        "/ai-and-advanced-analytics/", "/business-intelligence/",
+        "/managed-services/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/healthcare-analytics/",
+      "slug": "/healthcare-analytics/",
+      "section": "Who We Help – Industry",
+      "title": "Healthcare Analytics - Capitalize Analytics",
+      "meta_description": "Healthcare analytics consulting to improve data insights, streamline reporting, and drive smarter decisions with analytics and automation.",
+      "headings": [
+        { "level": "h1", "text": "Healthcare Analytics" }
+      ],
+      "body_copy": [
+        "Healthcare analytics consulting to improve data insights, streamline reporting, and drive smarter decisions with analytics and automation."
+      ],
+      "ctas": [
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" },
+        { "label": "Blog",       "url": "/blog/" },
+        { "label": "Webinars",   "url": "/webinar/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/", "/blog/", "/webinar/"
+      ],
+      "contact": {
+        "phone": "(214) 531-3904",
+        "locations": ["Dallas, TX", "Houston, TX"],
+        "hours": "Monday–Friday, 8:00 AM – 6:00 PM"
+      }
+    },
+    {
+      "url": "https://capitalizeconsulting.com/manufacturing-analytics/",
+      "slug": "/manufacturing-analytics/",
+      "section": "Who We Help – Industry",
+      "title": "Manufacturing Analytics - Capitalize Analytics",
+      "meta_description": "Manufacturing analytics consulting to improve data insights, streamline workflows, and enable smarter decisions with analytics and automation.",
+      "headings": [
+        { "level": "h1", "text": "Manufacturing Analytics" }
+      ],
+      "body_copy": [
+        "Manufacturing analytics consulting to improve data insights, streamline workflows, and enable smarter decisions with analytics and automation."
+      ],
+      "ctas": [
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" },
+        { "label": "Blog",       "url": "/blog/" },
+        { "label": "Webinars",   "url": "/webinar/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/", "/blog/", "/webinar/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/oil-gas-analytics-consulting/",
+      "slug": "/oil-gas-analytics-consulting/",
+      "section": "Who We Help – Industry",
+      "title": "Oil & Gas Analytics Consulting - Capitalize Analytics",
+      "meta_description": "Consulting services that help oil & gas teams unlock analytics value, automate processes, and drive smarter decisions with data, AI, and operational insights.",
+      "headings": [
+        { "level": "h1", "text": "Oil & Gas Analytics Consulting" }
+      ],
+      "body_copy": [
+        "Consulting services that help oil & gas teams unlock analytics value, automate processes, and drive smarter decisions with data, AI, and operational insights."
+      ],
+      "ctas": [
+        { "label": "Who We Are",                     "url": "/who-we-are/" },
+        { "label": "What We Do",                     "url": "/what-we-do/" },
+        { "label": "AI & Advanced Analytics",        "url": "/ai-and-advanced-analytics/" },
+        { "label": "Business Intelligence",          "url": "/business-intelligence/" },
+        { "label": "Data Engineering & Integration", "url": "/data-engineering-integration/" },
+        { "label": "Data Strategy & Advisory",       "url": "/data-strategy-advisory/" },
+        { "label": "Process Automation",             "url": "/process-automation/" },
+        { "label": "Managed Services",               "url": "/managed-services/" },
+        { "label": "Training",                       "url": "/training/" },
+        { "label": "Blog",                           "url": "/blog/" },
+        { "label": "Webinars",                       "url": "/webinar/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/",
+        "/ai-and-advanced-analytics/", "/business-intelligence/",
+        "/data-engineering-integration/", "/data-strategy-advisory/",
+        "/process-automation/", "/managed-services/", "/training/",
+        "/blog/", "/webinar/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/hospitality-analytics-consutling/",
+      "slug": "/hospitality-analytics-consutling/",
+      "section": "Who We Help – Industry",
+      "title": "Hospitality Analytics Consulting - Capitalize Analytics",
+      "meta_description": "Hospitality analytics consulting to help brands improve data insights, streamline reporting, and drive smarter decisions with analytics and automation.",
+      "note": "URL contains a typo ('consutling' instead of 'consulting') — matches the live site exactly.",
+      "headings": [
+        { "level": "h1", "text": "Hospitality Analytics Consulting" }
+      ],
+      "body_copy": [
+        "Hospitality analytics consulting to help brands improve data insights, streamline reporting, and drive smarter decisions with analytics and automation."
+      ],
+      "ctas": [
+        { "label": "Who We Are",           "url": "/who-we-are/" },
+        { "label": "What We Do",           "url": "/what-we-do/" },
+        { "label": "AI & Advanced Analytics", "url": "/ai-and-advanced-analytics/" },
+        { "label": "Business Intelligence","url": "/business-intelligence/" },
+        { "label": "Data Strategy & Advisory", "url": "/data-strategy-advisory/" },
+        { "label": "Blog",                 "url": "/blog/" },
+        { "label": "Webinars",             "url": "/webinar/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/",
+        "/ai-and-advanced-analytics/", "/business-intelligence/",
+        "/data-strategy-advisory/", "/blog/", "/webinar/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/retail-analytics-consulting/",
+      "slug": "/retail-analytics-consulting/",
+      "section": "Who We Help – Industry",
+      "title": "Retail Analytics Consulting - Capitalize Analytics",
+      "meta_description": "Retail analytics consulting to help brands improve data insights, streamline reporting, and drive smarter decisions with analytics and automation.",
+      "headings": [
+        { "level": "h1", "text": "Retail Analytics Consulting" }
+      ],
+      "body_copy": [
+        "Retail analytics consulting to help brands improve data insights, streamline reporting, and drive smarter decisions with analytics and automation."
+      ],
+      "ctas": [
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" },
+        { "label": "Blog",       "url": "/blog/" },
+        { "label": "Webinars",   "url": "/webinar/" },
+        { "label": "iGB",        "url": "/igb/" },
+        { "label": "Watchtower", "url": "/watchtower" },
+        { "label": "Workflow Admin Manager (WAM)", "url": "/workflow-admin-manager/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/", "/blog/", "/webinar/",
+        "/igb/", "/watchtower", "/workflow-admin-manager/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/education-analytics-consulting/",
+      "slug": "/education-analytics-consulting/",
+      "section": "Who We Help – Industry",
+      "title": "Education Analytics Consulting - Capitalize Analytics",
+      "meta_description": "Education analytics consulting to help institutions improve insight, streamline reporting, and make data-driven decisions with analytics and automation.",
+      "headings": [
+        { "level": "h1", "text": "Education Analytics Consulting" }
+      ],
+      "body_copy": [
+        "Education analytics consulting to help institutions improve insight, streamline reporting, and make data-driven decisions with analytics and automation."
+      ],
+      "ctas": [
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" },
+        { "label": "Blog",       "url": "/blog/" },
+        { "label": "Webinars",   "url": "/webinar/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/", "/blog/", "/webinar/",
+        "/ai-and-advanced-analytics/", "/business-intelligence/",
+        "/data-engineering-integration/", "/data-strategy-advisory/",
+        "/process-automation/"
+      ]
+    },
+    {
+      "url": "https://capitalizeconsulting.com/government-analytics-consutling/",
+      "slug": "/government-analytics-consutling/",
+      "section": "Who We Help – Industry",
+      "title": "Government Analytics Consulting - Capitalize Analytics",
+      "meta_description": "Government analytics consulting to improve data use, streamline reporting, and drive smarter decisions with analytics and automation.",
+      "note": "URL contains a typo ('consutling' instead of 'consulting') — matches the live site exactly.",
+      "headings": [
+        { "level": "h1", "text": "Government Analytics Consulting" }
+      ],
+      "body_copy": [
+        "Government analytics consulting to improve data use, streamline reporting, and drive smarter decisions with analytics and automation."
+      ],
+      "ctas": [
+        { "label": "Who We Are",                     "url": "/who-we-are/" },
+        { "label": "What We Do",                     "url": "/what-we-do/" },
+        { "label": "AI & Advanced Analytics",        "url": "/ai-and-advanced-analytics/" },
+        { "label": "Business Intelligence",          "url": "/business-intelligence/" },
+        { "label": "Data Engineering & Integration", "url": "/data-engineering-integration/" },
+        { "label": "Data Strategy & Advisory",       "url": "/data-strategy-advisory/" },
+        { "label": "Process Automation",             "url": "/process-automation/" },
+        { "label": "Managed Services",               "url": "/managed-services/" },
+        { "label": "Training",                       "url": "/training/" },
+        { "label": "Blog",                           "url": "/blog/" },
+        { "label": "Webinars",                       "url": "/webinar/" }
+      ],
+      "internal_links": [
+        "/who-we-are/", "/what-we-do/",
+        "/ai-and-advanced-analytics/", "/business-intelligence/",
+        "/data-engineering-integration/", "/data-strategy-advisory/",
+        "/process-automation/", "/managed-services/", "/training/",
+        "/blog/", "/webinar/"
+      ]
+    },
+
+    {
+      "url": "https://capitalizeconsulting.com/blog/",
+      "slug": "/blog/",
+      "section": "Insights",
+      "title": "Blog - Capitalize Analytics",
+      "meta_description": null,
+      "headings": [
+        { "level": "h1", "text": "Blog" }
+      ],
+      "body_copy": [],
+      "ctas": [
+        { "label": "Webinars",   "url": "/webinar/" },
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" }
+      ],
+      "internal_links": [
+        "/webinar/", "/who-we-are/", "/what-we-do/"
+      ],
+      "note": "Individual blog post URLs not discoverable via static HTML fetch; site uses dynamic/JS rendering."
+    },
+    {
+      "url": "https://capitalizeconsulting.com/webinar/",
+      "slug": "/webinar/",
+      "section": "Insights",
+      "title": "Webinars - Capitalize Analytics",
+      "meta_description": null,
+      "headings": [
+        { "level": "h1", "text": "Webinars" }
+      ],
+      "body_copy": [],
+      "ctas": [
+        { "label": "Blog",       "url": "/blog/" },
+        { "label": "Training",   "url": "/training/" },
+        { "label": "Who We Are", "url": "/who-we-are/" },
+        { "label": "What We Do", "url": "/what-we-do/" }
+      ],
+      "internal_links": [
+        "/blog/", "/training/", "/who-we-are/", "/what-we-do/"
+      ],
+      "note": "Individual webinar URLs not discoverable via static HTML fetch; site uses dynamic/JS rendering."
+    }
+  ],
+  "summary": {
+    "total_pages": 33,
+    "sections": {
+      "Core": 4,
+      "How We Help": 7,
+      "Products": 3,
+      "Who We Help – Functional": 8,
+      "Who We Help – Industry": 9,
+      "Insights": 2
+    },
+    "known_url_typos": [
+      "/hospitality-analytics-consutling/ (should be 'consulting')",
+      "/government-analytics-consutling/ (should be 'consulting')"
+    ]
+  }
+}
