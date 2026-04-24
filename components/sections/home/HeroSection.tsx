@@ -55,7 +55,7 @@ export function HeroSection() {
         }}
       />
 
-      <div className="container-wide relative z-10 py-32 lg:py-44">
+      <div className="container-wide relative z-10 py-20 lg:py-28">
         <div className="max-w-3xl">
 
           {/* Eyebrow — accent bar + label */}
