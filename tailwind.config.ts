@@ -11,23 +11,22 @@ const config: Config = {
       colors: {
         // Core backgrounds — deep navy scale
         navy: {
-          950: '#04080F',
-          900: '#070D1A',
-          800: '#0C1526',
-          700: '#111E38',
-          600: '#172849',
-          500: '#1E3459',
-          400: '#264270',
-          border: '#1A2E4A',
-          'border-subtle': '#0F1E35',
+          950: '#080F1C',
+          900: '#0C1829',
+          800: '#111F35',
+          700: '#162840',
+          600: '#1C324E',
+          500: '#233D5E',
+          400: '#2C4D72',
+          border: '#1E3554',
+          'border-subtle': '#152033',
         },
-        // Electric teal accent system
         teal: {
-          DEFAULT: '#00C8E8',
-          bright: '#3DDFFF',
+          DEFAULT: '#00B4D0',
+          bright: '#2DD4F0',
           dim: '#007A90',
-          glow: 'rgba(0,200,232,0.15)',
-          'glow-strong': 'rgba(0,200,232,0.30)',
+          glow: 'rgba(0,180,208,0.12)',
+          'glow-strong': 'rgba(0,180,208,0.22)',
         },
       },
       fontFamily: {

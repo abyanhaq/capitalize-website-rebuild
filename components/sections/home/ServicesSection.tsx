@@ -2,80 +2,67 @@
 
 import Link from 'next/link'
 import { AnimateOnView, StaggerContainer, staggerItem } from '@/components/ui/AnimateOnView'
-import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { motion } from 'framer-motion'
-import {
-  Brain,
-  BarChart3,
-  Database,
-  Map,
-  Zap,
-  Settings,
-  GraduationCap,
-  ArrowRight,
-} from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 const SERVICES = [
   {
-    icon: Brain,
+    num: '01',
     label: 'AI & Advanced Analytics',
     href: '/ai-and-advanced-analytics',
-    desc: 'Practical AI and advanced analytics solutions — from use-case identification through model deployment and MLOps.',
+    desc: 'From use-case identification through model deployment — practical AI that delivers ROI, not proof-of-concepts that collect dust.',
   },
   {
-    icon: BarChart3,
+    num: '02',
     label: 'Business Intelligence',
     href: '/business-intelligence',
-    desc: 'Intuitive, self-service BI dashboards and reports that give teams real-time visibility into performance.',
+    desc: 'Self-service dashboards, reporting infrastructure, and real-time visibility into the metrics that drive your business.',
   },
   {
-    icon: Map,
+    num: '03',
     label: 'Data Strategy & Advisory',
     href: '/data-strategy-advisory',
-    desc: 'Clear, actionable data strategies that align technology, governance, and analytics with your business goals.',
+    desc: 'Governance frameworks, data maturity roadmaps, and enterprise strategies that align technology investment with business outcomes.',
   },
   {
-    icon: Database,
+    num: '04',
     label: 'Data Engineering & Integration',
     href: '/data-engineering-integration',
-    desc: 'Modern data platforms and pipelines that deliver trusted, high-quality data to the right people and systems.',
+    desc: 'Modern pipelines, unified data platforms, and analytics-ready infrastructure your teams can trust and build on.',
   },
   {
-    icon: Zap,
+    num: '05',
     label: 'Process Automation',
     href: '/process-automation',
-    desc: 'Automate manual, spreadsheet-driven processes so teams focus on high-value work while workflows run reliably.',
+    desc: 'Eliminate manual, spreadsheet-driven work so your teams focus on high-value decisions while workflows run reliably.',
   },
   {
-    icon: Settings,
+    num: '06',
     label: 'Managed Services',
     href: '/managed-services',
-    desc: 'Ongoing support, optimization, and enhancement of your analytics and automation solutions.',
+    desc: 'Ongoing platform support, optimization, and continuous improvement — without the overhead of building an in-house team.',
   },
   {
-    icon: GraduationCap,
+    num: '07',
     label: 'Training & Mentoring',
     href: '/training',
-    desc: 'Practical, customized training to help teams successfully adopt and scale AI, analytics, and automation.',
+    desc: 'Hands-on, practical training that builds lasting capability — so your teams own and extend the solutions we build together.',
   },
 ]
 
 function ServiceCard({ service }: { service: typeof SERVICES[0] }) {
-  const Icon = service.icon
   return (
     <motion.div variants={staggerItem}>
       <Link
         href={service.href}
-        className="group flex flex-col h-full rounded-xl border border-navy-border bg-navy-800 p-6 transition-all duration-300 hover:border-teal/25 hover:bg-navy-700 hover:shadow-card-hover hover:-translate-y-0.5"
+        className="group flex flex-col h-full border border-navy-border bg-navy-800 rounded-xl p-7 transition-colors duration-200 hover:border-teal/30 hover:bg-navy-700"
       >
-        <div className="mb-4 flex items-center justify-between">
-          <div className="h-10 w-10 rounded-lg bg-teal/10 border border-teal/15 flex items-center justify-center transition-colors duration-200 group-hover:bg-teal/15 group-hover:border-teal/30">
-            <Icon className="h-5 w-5 text-teal" />
-          </div>
-          <ArrowRight className="h-4 w-4 text-slate-600 transition-all duration-200 group-hover:text-teal group-hover:translate-x-0.5" />
+        <div className="flex items-start justify-between mb-5">
+          <span className="font-mono text-xs text-teal/60 tracking-widest">{service.num}</span>
+          <ArrowRight className="h-4 w-4 text-navy-border transition-colors duration-200 group-hover:text-teal" />
         </div>
-        <h3 className="font-display text-base font-semibold text-white mb-2 group-hover:text-teal transition-colors duration-200">
+        <h3 className="font-display text-base font-semibold text-white mb-3 group-hover:text-teal transition-colors duration-200">
           {service.label}
         </h3>
         <p className="text-sm text-slate-500 leading-relaxed flex-1">{service.desc}</p>
@@ -86,32 +73,27 @@ function ServiceCard({ service }: { service: typeof SERVICES[0] }) {
 
 export function ServicesSection() {
   return (
-    <section className="section-py bg-navy-950 relative">
-      {/* Top grid fade */}
-      <div className="absolute inset-0 bg-grid-sm opacity-25 pointer-events-none" />
-      <div className="absolute top-0 inset-x-0 h-24 bg-gradient-to-b from-navy-900 to-transparent pointer-events-none" />
-
-      <div className="container-wide relative z-10">
+    <section className="section-py bg-navy-800 border-y border-navy-border">
+      <div className="container-wide">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
           <div>
             <AnimateOnView>
-              <Badge variant="teal" className="mb-4">Services &amp; Technologies</Badge>
+              <p className="data-label mb-4">How We Help</p>
             </AnimateOnView>
             <AnimateOnView delay={0.05}>
               <h2 className="font-display text-display-md font-bold text-white leading-tight">
-                How We Help You{' '}
-                <span className="text-gradient-teal">Win with Data</span>
+                Services &amp; Capabilities
               </h2>
             </AnimateOnView>
-            <AnimateOnView delay={0.1}>
-              <p className="mt-3 text-slate-400 max-w-xl leading-relaxed">
-                We help organizations turn disconnected data, manual processes, and scattered tools
-                into a connected analytics ecosystem that drives smarter decisions every day.
+            <AnimateOnView delay={0.08}>
+              <p className="mt-3 text-slate-400 max-w-lg leading-relaxed">
+                We help organizations turn disconnected data and manual processes into a connected
+                analytics ecosystem that drives smarter decisions every day.
               </p>
             </AnimateOnView>
           </div>
-          <AnimateOnView delay={0.1} direction="left">
+          <AnimateOnView delay={0.08} direction="left">
             <Button href="/what-we-do" variant="outline" size="md" arrow>
               All Services
             </Button>
@@ -119,29 +101,10 @@ export function ServicesSection() {
         </div>
 
         {/* Grid */}
-        <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {SERVICES.map((s) => (
             <ServiceCard key={s.href} service={s} />
           ))}
-          {/* CTA card */}
-          <motion.div variants={staggerItem}>
-            <Link
-              href="/contact"
-              className="group flex flex-col h-full rounded-xl border border-teal/20 bg-teal/5 p-6 transition-all duration-300 hover:border-teal/40 hover:bg-teal/10 hover:shadow-teal-sm hover:-translate-y-0.5"
-            >
-              <p className="font-mono text-[10px] uppercase tracking-widest text-teal mb-3">Not sure where to start?</p>
-              <h3 className="font-display text-base font-semibold text-white mb-2">
-                Let&apos;s Find Your Best Entry Point
-              </h3>
-              <p className="text-sm text-slate-500 leading-relaxed flex-1">
-                A 90-minute complimentary workshop to identify high-impact, low-risk AI and analytics opportunities.
-              </p>
-              <div className="mt-4 flex items-center gap-1.5 text-sm font-medium text-teal">
-                Book a session
-                <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5" />
-              </div>
-            </Link>
-          </motion.div>
         </StaggerContainer>
       </div>
     </section>

@@ -1,80 +1,103 @@
-'use client'
-
 import Link from 'next/link'
-import { AnimateOnView, StaggerContainer, staggerItem } from '@/components/ui/AnimateOnView'
-import { Badge } from '@/components/ui/Badge'
-import { motion } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
+import { AnimateOnView } from '@/components/ui/AnimateOnView'
+import { Button } from '@/components/ui/Button'
 
 const INDUSTRIES = [
-  { label: 'Financial Services', href: '/financial-services-consulting', desc: 'Finance, risk & operations analytics' },
-  { label: 'Healthcare',          href: '/healthcare-analytics',           desc: 'Clinical & operational data insights' },
-  { label: 'Manufacturing',       href: '/manufacturing-analytics',        desc: 'Production & supply chain intelligence' },
-  { label: 'Oil & Gas',           href: '/oil-gas-analytics-consulting',   desc: 'Upstream, midstream & downstream analytics' },
-  { label: 'Distribution',        href: '/distribution-analytics',         desc: 'Logistics & operational visibility' },
-  { label: 'Retail',              href: '/retail-analytics-consulting',     desc: 'Customer, inventory & sales data' },
-  { label: 'Hospitality',         href: '/hospitality-analytics-consulting', desc: 'Guest insights & revenue analytics' },
-  { label: 'Education',           href: '/education-analytics-consulting', desc: 'Student outcomes & institutional data' },
-  { label: 'Government',          href: '/government-analytics-consulting', desc: 'Public-sector data & reporting' },
+  { label: 'Financial Services', href: '/financial-services-consulting' },
+  { label: 'Healthcare',          href: '/healthcare-analytics' },
+  { label: 'Manufacturing',       href: '/manufacturing-analytics' },
+  { label: 'Oil & Gas',           href: '/oil-gas-analytics-consulting' },
+  { label: 'Distribution',        href: '/distribution-analytics' },
+  { label: 'Retail',              href: '/retail-analytics-consulting' },
+  { label: 'Hospitality',         href: '/hospitality-analytics-consulting' },
+  { label: 'Education',           href: '/education-analytics-consulting' },
+  { label: 'Government',          href: '/government-analytics-consulting' },
+]
+
+const FUNCTIONS = [
+  { label: 'Accounting',                href: '/accounting' },
+  { label: 'Audit',                     href: '/audit' },
+  { label: 'Financial Planning & Analysis', href: '/financial-planning-analysis' },
+  { label: 'Tax Analytics',             href: '/tax-analytics-consulting' },
+  { label: 'Technology & IT',           href: '/technology-it-consulting' },
+  { label: 'Sales & Marketing',         href: '/sales-marketing-analytics-consulting' },
+  { label: 'Supply Chain',              href: '/supply-chain-analytics' },
+  { label: 'HR & Workforce',            href: '/hr-workforce-analytics' },
 ]
 
 export function IndustriesSection() {
   return (
-    <section className="section-py bg-navy-900 relative overflow-hidden">
-      {/* Bottom glow */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-teal/4 blur-[100px] rounded-full pointer-events-none" />
+    <section className="section-py bg-navy-900">
+      <div className="container-wide">
 
-      <div className="container-wide relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          {/* Left — header */}
-          <div className="lg:sticky lg:top-24">
+        {/* Header */}
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
+          <div>
             <AnimateOnView>
-              <Badge variant="teal" className="mb-5">Industries We Work With</Badge>
+              <p className="data-label mb-4">Who We Help</p>
             </AnimateOnView>
             <AnimateOnView delay={0.05}>
-              <h2 className="font-display text-display-md font-bold text-white leading-tight mb-6">
-                No matter your industry —{' '}
-                <span className="text-gradient-teal">if you run on data, we can help</span>
+              <h2 className="font-display text-display-md font-bold text-white leading-tight">
+                Across Every Industry &amp; Function
               </h2>
             </AnimateOnView>
-            <AnimateOnView delay={0.1}>
-              <p className="text-slate-400 leading-relaxed mb-8">
-                From healthcare and financial services to manufacturing, retail, and beyond, our team
-                understands how to adapt analytics, AI, and automation to your unique business model
-                and challenges.
+            <AnimateOnView delay={0.08}>
+              <p className="mt-3 text-slate-400 max-w-lg leading-relaxed">
+                If you run on data, we can help. Our team adapts analytics, AI, and automation
+                to your unique business model and the specific challenges of your domain.
               </p>
             </AnimateOnView>
-            <AnimateOnView delay={0.15}>
-              <Link
-                href="/what-we-do"
-                className="group inline-flex items-center gap-2 text-sm font-medium text-teal hover:text-teal-bright transition-colors"
-              >
-                View all industries &amp; functions
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-              </Link>
-            </AnimateOnView>
           </div>
-
-          {/* Right — industry cards */}
-          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 gap-3" staggerDelay={0.05}>
-            {INDUSTRIES.map((ind) => (
-              <motion.div key={ind.href} variants={staggerItem}>
-                <Link
-                  href={ind.href}
-                  className="group flex items-start justify-between gap-3 rounded-xl border border-navy-border bg-navy-800 p-4 transition-all duration-200 hover:border-teal/25 hover:bg-navy-700"
-                >
-                  <div>
-                    <p className="text-sm font-semibold text-white group-hover:text-teal transition-colors duration-200 mb-0.5">
-                      {ind.label}
-                    </p>
-                    <p className="text-xs text-slate-500">{ind.desc}</p>
-                  </div>
-                  <ArrowRight className="h-4 w-4 text-slate-600 flex-shrink-0 mt-0.5 transition-all duration-200 group-hover:text-teal group-hover:translate-x-0.5" />
-                </Link>
-              </motion.div>
-            ))}
-          </StaggerContainer>
+          <AnimateOnView delay={0.08} direction="left">
+            <Button href="/what-we-do" variant="outline" size="md" arrow>
+              View All
+            </Button>
+          </AnimateOnView>
         </div>
+
+        {/* Two columns: Industries | Functions */}
+        <AnimateOnView delay={0.1}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-navy-border">
+            {/* Industries */}
+            <div className="bg-navy-900 pr-0 lg:pr-12 pb-12 lg:pb-0">
+              <p className="font-mono text-[10px] uppercase tracking-widest text-slate-600 mb-4">
+                By Industry
+              </p>
+              <div className="divide-y divide-navy-border">
+                {INDUSTRIES.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="group flex items-center justify-between py-3.5 text-sm text-slate-400 hover:text-white transition-colors duration-150"
+                  >
+                    {item.label}
+                    <span className="text-teal opacity-0 group-hover:opacity-100 transition-opacity text-xs">→</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Functions */}
+            <div className="bg-navy-900 pl-0 lg:pl-12 pt-12 lg:pt-0">
+              <p className="font-mono text-[10px] uppercase tracking-widest text-slate-600 mb-4">
+                By Function
+              </p>
+              <div className="divide-y divide-navy-border">
+                {FUNCTIONS.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="group flex items-center justify-between py-3.5 text-sm text-slate-400 hover:text-white transition-colors duration-150"
+                  >
+                    {item.label}
+                    <span className="text-teal opacity-0 group-hover:opacity-100 transition-opacity text-xs">→</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </AnimateOnView>
+
       </div>
     </section>
   )
