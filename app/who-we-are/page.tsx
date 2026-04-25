@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 }
 
 const STATS = [
-  { value: '$10M+', label: 'Operational Savings Delivered' },
-  { value: '50K+',  label: 'Hours Saved for Clients' },
-  { value: '95%',   label: 'Client Retention Rate' },
-  { value: '20+',   label: 'Years of Experience' },
+  { value: '3.7+ Mil', label: 'Hours Saved' },
+  { value: '7X',       label: 'ROI Delivered' },
+  { value: '99%',      label: 'Client Satisfaction' },
+  { value: '20+',      label: 'Years of Expertise' },
 ]
 
 const DIFFERENTIATORS = [

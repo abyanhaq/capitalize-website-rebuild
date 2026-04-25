@@ -1,10 +1,10 @@
 import { AnimateOnView } from '@/components/ui/AnimateOnView'
 
 const STATS = [
-  { value: '1,500+', label: 'Projects Completed' },
-  { value: '1,000+', label: 'Clients Served' },
-  { value: '95%',    label: 'Client Retention Rate' },
-  { value: '20+',    label: 'Years of Experience' },
+  { value: '50K+',  label: 'Hours Saved for Clients' },
+  { value: '$10M+', label: 'Operational Savings Delivered' },
+  { value: '5K+',   label: 'Workflows Designed' },
+  { value: '9',     label: 'Industries Served' },
 ]
 
 export function StatsSection() {
