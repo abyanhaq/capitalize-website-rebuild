@@ -69,7 +69,7 @@ export default function WhoWeArePage() {
     <>
       {/* ─── Hero ──────────────────────────────────────────────────── */}
       <section
-        className="relative flex items-center overflow-hidden bg-[#060E1B]"
+        className="relative flex items-center overflow-hidden bg-[#110c1d]"
         style={{ minHeight: '55vh' }}
       >
         <div
@@ -89,7 +89,7 @@ export default function WhoWeArePage() {
 
         <div className="container-wide relative z-10 py-24 lg:py-32">
           <AnimateOnView delay={0}>
-            <p className="section-label mb-5" style={{ color: '#22D3EE', opacity: 0.8 }}>
+            <p className="section-label mb-5" style={{ color: '#4A72D9', opacity: 0.8 }}>
               Who We Are
             </p>
           </AnimateOnView>
@@ -99,7 +99,7 @@ export default function WhoWeArePage() {
             </h1>
           </AnimateOnView>
           <AnimateOnView delay={0.12}>
-            <p className="text-lg leading-relaxed max-w-2xl mb-10" style={{ color: '#8A9EBB' }}>
+            <p className="text-lg leading-relaxed max-w-2xl mb-10" style={{ color: '#A89EC4' }}>
               We help organizations implement software, automate processes, and analyze data. Our
               remote team spans across the US and Canada and brings decades of experience to every
               project as they work with best-in-class technology like Alteryx, UiPath, Workday
@@ -226,7 +226,7 @@ export default function WhoWeArePage() {
                 <div className="flex items-center gap-4 bg-paper-50 border border-paper-border rounded-xl p-5">
                   <div
                     className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-sm font-bold text-white"
-                    style={{ background: 'linear-gradient(135deg, #0891B2, #0E7490)' }}
+                    style={{ background: 'linear-gradient(135deg, #0E41B8, #0E7490)' }}
                   >
                     {getInitials(member.name)}
                   </div>
@@ -242,7 +242,7 @@ export default function WhoWeArePage() {
       </section>
 
       {/* ─── CTA ───────────────────────────────────────────────────── */}
-      <section className="section-py-sm relative overflow-hidden bg-[#060E1B]">
+      <section className="section-py-sm relative overflow-hidden bg-[#110c1d]">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -257,7 +257,7 @@ export default function WhoWeArePage() {
             </h2>
           </AnimateOnView>
           <AnimateOnView delay={0.06}>
-            <p className="text-base mb-8 max-w-lg mx-auto" style={{ color: '#8A9EBB' }}>
+            <p className="text-base mb-8 max-w-lg mx-auto" style={{ color: '#A89EC4' }}>
               Reach out to our team and discover how Capitalize Analytics can help your organization
               unlock the full value of your data.
             </p>

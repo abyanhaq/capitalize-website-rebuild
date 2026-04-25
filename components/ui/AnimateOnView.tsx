@@ -81,3 +81,16 @@ export const staggerItem = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.16, 1, 0.3, 1] } },
 }
+
+type StaggerItemProps = {
+  children: React.ReactNode
+  className?: string
+}
+
+export function StaggerItem({ children, className }: StaggerItemProps) {
+  return (
+    <motion.div variants={staggerItem} className={className}>
+      {children}
+    </motion.div>
+  )
+}

@@ -101,7 +101,7 @@ export default function DataStrategyAdvisoryPage() {
   return (
     <main>
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden bg-[#060E1B] min-h-[55vh] flex items-center">
+      <section className="relative overflow-hidden bg-[#110c1d] min-h-[55vh] flex items-center">
         {dotGrid}
         <div className="relative container-wide section-py">
           <AnimateOnView>
@@ -109,7 +109,7 @@ export default function DataStrategyAdvisoryPage() {
             <h1 className="font-display text-display-xl font-bold leading-tight text-white max-w-4xl mb-6">
               Stop Fighting Spreadsheets and Silos. Start Running on a Real Data Strategy.
             </h1>
-            <p className="text-lg max-w-2xl mb-8" style={{ color: '#8A9EBB' }}>
+            <p className="text-lg max-w-2xl mb-8" style={{ color: '#A89EC4' }}>
               Capitalize helps finance, operations, and IT leaders build a practical, business-first
               data strategy so you can trust your numbers, automate the busywork, and move faster —
               with the platforms you already own and the ones you plan to invest in.
@@ -290,7 +290,7 @@ export default function DataStrategyAdvisoryPage() {
       </section>
 
       {/* ── CTA Banner ── */}
-      <section className="relative bg-[#060E1B] section-py-sm overflow-hidden">
+      <section className="relative bg-[#110c1d] section-py-sm overflow-hidden">
         {dotGrid}
         <div className="relative container-wide text-center">
           <AnimateOnView>
@@ -298,7 +298,7 @@ export default function DataStrategyAdvisoryPage() {
             <h3 className="font-display text-display-lg font-bold text-white mb-4">
               Request a Data Strategy Assessment
             </h3>
-            <p className="text-lg mb-8 max-w-xl mx-auto" style={{ color: '#8A9EBB' }}>
+            <p className="text-lg mb-8 max-w-xl mx-auto" style={{ color: '#A89EC4' }}>
               Talk to a data strategy advisor about where your organization should start.
             </p>
             <Button href="/contact" variant="primary" size="lg" arrow>

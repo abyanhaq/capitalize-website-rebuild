@@ -72,7 +72,7 @@ export default function WhatWeDoPage() {
     <>
       {/* ─── Hero ──────────────────────────────────────────────────── */}
       <section
-        className="relative flex items-center overflow-hidden bg-[#060E1B]"
+        className="relative flex items-center overflow-hidden bg-[#110c1d]"
         style={{ minHeight: '55vh' }}
       >
         <div
@@ -92,7 +92,7 @@ export default function WhatWeDoPage() {
 
         <div className="container-wide relative z-10 py-24 lg:py-32">
           <AnimateOnView delay={0}>
-            <p className="section-label mb-5" style={{ color: '#22D3EE', opacity: 0.8 }}>
+            <p className="section-label mb-5" style={{ color: '#4A72D9', opacity: 0.8 }}>
               What We Do
             </p>
           </AnimateOnView>
@@ -102,7 +102,7 @@ export default function WhatWeDoPage() {
             </h1>
           </AnimateOnView>
           <AnimateOnView delay={0.12}>
-            <p className="text-lg leading-relaxed max-w-2xl mb-10" style={{ color: '#8A9EBB' }}>
+            <p className="text-lg leading-relaxed max-w-2xl mb-10" style={{ color: '#A89EC4' }}>
               We help organizations turn data into smarter decisions through analytics, automation,
               and AI. Our team designs, builds, and supports modern data solutions that drive
               measurable business outcomes.
@@ -243,7 +243,7 @@ export default function WhatWeDoPage() {
       </section>
 
       {/* ─── CTA ───────────────────────────────────────────────────── */}
-      <section className="section-py-sm relative overflow-hidden bg-[#060E1B]">
+      <section className="section-py-sm relative overflow-hidden bg-[#110c1d]">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -265,7 +265,7 @@ export default function WhatWeDoPage() {
             </h2>
           </AnimateOnView>
           <AnimateOnView delay={0.06}>
-            <p className="text-base mb-8 max-w-lg mx-auto" style={{ color: '#8A9EBB' }}>
+            <p className="text-base mb-8 max-w-lg mx-auto" style={{ color: '#A89EC4' }}>
               Whether you&apos;re modernizing your data platform, building an AI use case, or
               automating workflows — our team works alongside yours from day one through adoption.
             </p>

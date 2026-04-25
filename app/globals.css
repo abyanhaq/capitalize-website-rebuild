@@ -4,22 +4,22 @@
 
 /* ─── Design Tokens ──────────────────────────────────────────────────── */
 :root {
-  /* Dark section surfaces */
-  --bg-base:          #060E1B;
-  --bg-surface:       #0B1526;
-  --bg-elevated:      #111E35;
-  --border-default:   #1A2E4A;
-  --border-subtle:    #0F1E30;
+  /* Dark section surfaces — original deep purple-navy */
+  --bg-base:          #110c1d;
+  --bg-surface:       #1a1230;
+  --bg-elevated:      #1e1535;
+  --border-default:   #2e1e4a;
+  --border-subtle:    #1a1230;
 
-  /* Accent */
-  --teal:             #0891B2;
-  --teal-bright:      #22D3EE;
-  --teal-dim:         #0E7490;
+  /* Accent — original royal blue */
+  --teal:             #0E41B8;
+  --teal-bright:      #4A72D9;
+  --teal-dim:         #0B35A0;
 
   /* Text on dark */
-  --text-primary:     #EBF1FB;
-  --text-secondary:   #8A9EBB;
-  --text-muted:       #4A6278;
+  --text-primary:     #EDE8F5;
+  --text-secondary:   #A89EC4;
+  --text-muted:       #7B7099;
 
   /* Light section surfaces */
   --paper:            #FFFFFF;
@@ -44,7 +44,7 @@
   }
 
   body {
-    background-color: #060E1B;
+    background-color: #110c1d;
     color: var(--text-dark);
     min-height: 100dvh;
     @apply font-sans;
@@ -71,8 +71,8 @@
   /* Grid background — for dark sections only */
   .bg-grid {
     background-image:
-      linear-gradient(rgba(26, 46, 74, 0.08) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(26, 46, 74, 0.08) 1px, transparent 1px);
+      linear-gradient(rgba(46, 30, 74, 0.12) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(46, 30, 74, 0.12) 1px, transparent 1px);
     background-size: 60px 60px;
   }
 

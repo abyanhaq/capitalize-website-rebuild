@@ -92,7 +92,7 @@ export default function AIAndAdvancedAnalyticsPage() {
   return (
     <>
       {/* ─── Hero ──────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-[#060E1B] min-h-[55vh] flex items-center">
+      <section className="relative overflow-hidden bg-[#110c1d] min-h-[55vh] flex items-center">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -115,7 +115,7 @@ export default function AIAndAdvancedAnalyticsPage() {
 
         <div className="container-wide relative z-10 py-24 lg:py-32">
           <AnimateOnView delay={0}>
-            <p className="section-label mb-5" style={{ color: '#22D3EE', opacity: 0.8 }}>
+            <p className="section-label mb-5" style={{ color: '#4A72D9', opacity: 0.8 }}>
               AI &amp; Advanced Analytics
             </p>
           </AnimateOnView>
@@ -125,7 +125,7 @@ export default function AIAndAdvancedAnalyticsPage() {
             </h1>
           </AnimateOnView>
           <AnimateOnView delay={0.12}>
-            <p className="text-lg leading-relaxed max-w-2xl mb-10" style={{ color: '#8A9EBB' }}>
+            <p className="text-lg leading-relaxed max-w-2xl mb-10" style={{ color: '#A89EC4' }}>
               AI and advanced analytics promise incredible results — but for many teams, the biggest
               challenge isn&apos;t the technology itself. It&apos;s figuring out where to begin,
               which tools to trust, and how to move forward safely without risking data, compliance,
@@ -285,7 +285,7 @@ export default function AIAndAdvancedAnalyticsPage() {
                       >
                         <span
                           className="w-1.5 h-1.5 rounded-full"
-                          style={{ background: '#0891B2' }}
+                          style={{ background: '#0E41B8' }}
                         />
                       </span>
                       <p className="text-slate-700 text-base leading-relaxed">{point}</p>
@@ -323,7 +323,7 @@ export default function AIAndAdvancedAnalyticsPage() {
       </section>
 
       {/* ─── CTA ───────────────────────────────────────────────────────── */}
-      <section className="section-py-sm relative overflow-hidden bg-[#060E1B]">
+      <section className="section-py-sm relative overflow-hidden bg-[#110c1d]">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -339,7 +339,7 @@ export default function AIAndAdvancedAnalyticsPage() {
             </h3>
           </AnimateOnView>
           <AnimateOnView delay={0.06}>
-            <p className="text-base mb-8 max-w-lg mx-auto" style={{ color: '#8A9EBB' }}>
+            <p className="text-base mb-8 max-w-lg mx-auto" style={{ color: '#A89EC4' }}>
               We&apos;ll identify where AI can drive value safely, quickly, and sustainably.
             </p>
           </AnimateOnView>

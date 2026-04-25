@@ -19,7 +19,7 @@ const fade = (delay = 0) => ({
 export function HeroSection() {
   return (
     <section className="relative flex items-center overflow-hidden" style={{
-      background: 'linear-gradient(160deg, #060E1B 0%, #070F1E 45%, #060C18 100%)',
+      background: 'linear-gradient(135deg, #1a1230 0%, #110c1d 100%)',
       minHeight: 'calc(100dvh - 4rem)',
     }}>
 
@@ -27,7 +27,7 @@ export function HeroSection() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(circle, rgba(30,58,90,0.55) 1px, transparent 1px)',
+          backgroundImage: 'radial-gradient(circle, rgba(74,50,110,0.45) 1px, transparent 1px)',
           backgroundSize: '28px 28px',
         }}
       />
@@ -40,7 +40,7 @@ export function HeroSection() {
           right: '-5%',
           width: '55%',
           height: '70%',
-          background: 'radial-gradient(ellipse at center, rgba(8,145,178,0.07) 0%, transparent 65%)',
+          background: 'radial-gradient(ellipse at center, rgba(14,65,184,0.12) 0%, transparent 65%)',
         }}
       />
 
@@ -52,7 +52,7 @@ export function HeroSection() {
           left: '0',
           width: '40%',
           height: '40%',
-          background: 'radial-gradient(ellipse at bottom left, rgba(6,14,27,0.9) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse at bottom left, rgba(17,12,29,0.9) 0%, transparent 70%)',
         }}
       />
 
@@ -61,8 +61,8 @@ export function HeroSection() {
 
           {/* Eyebrow — accent bar + label */}
           <motion.div {...fade(0)} className="mb-8 flex items-center gap-3">
-            <div className="h-px w-8 bg-teal" style={{ opacity: 0.7 }} />
-            <p className="font-sans text-[11px] font-medium tracking-[0.18em] uppercase" style={{ color: '#22D3EE', opacity: 0.75 }}>
+            <div className="h-px w-8 bg-teal" style={{ opacity: 0.9 }} />
+            <p className="font-sans text-[11px] font-medium tracking-[0.18em] uppercase" style={{ color: '#4A72D9', opacity: 0.85 }}>
               AI &amp; Data Consulting · Dallas &amp; Houston, TX
             </p>
           </motion.div>
@@ -75,14 +75,14 @@ export function HeroSection() {
             Empowering Organizations
             <br />
             to Realize Value from{' '}
-            <span style={{ color: '#38BDF8' }}>Data &amp; AI</span>
+            <span style={{ color: '#4A72D9' }}>Data &amp; AI</span>
           </motion.h1>
 
           {/* Subheadline */}
           <motion.p
             {...fade(0.16)}
             className="text-lg leading-relaxed max-w-xl mb-10"
-            style={{ color: '#8A9EBB' }}
+            style={{ color: '#A89EC4' }}
           >
             A specialist consulting firm that bridges AI strategy and enterprise ROI —
             delivering analytics, automation, and data infrastructure
@@ -106,12 +106,12 @@ export function HeroSection() {
 
           {/* Stats */}
           <motion.div {...fade(0.3)}>
-            <div className="h-px w-12 mb-8" style={{ background: 'rgba(26,46,74,0.9)' }} />
+            <div className="h-px w-12 mb-8" style={{ background: 'rgba(46,30,74,0.9)' }} />
             <div className="flex flex-wrap gap-10">
               {STATS.map((s) => (
                 <div key={s.label}>
                   <p className="font-display text-2xl font-bold text-white tracking-tight">{s.value}</p>
-                  <p className="text-xs mt-0.5 tracking-wide" style={{ color: '#4A6278' }}>{s.label}</p>
+                  <p className="text-xs mt-0.5 tracking-wide" style={{ color: '#7B7099' }}>{s.label}</p>
                 </div>
               ))}
             </div>

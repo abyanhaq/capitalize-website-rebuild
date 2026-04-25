@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { AnimateOnView, StaggerContainer, staggerItem } from '@/components/ui/AnimateOnView'
+import { AnimateOnView, StaggerContainer, StaggerItem } from '@/components/ui/AnimateOnView'
 import { Button } from '@/components/ui/Button'
 
 export const metadata: Metadata = {
@@ -65,7 +65,7 @@ export default function DistributionAnalyticsPage() {
   return (
     <main>
       {/* Section 1: Hero */}
-      <section className="relative overflow-hidden bg-[#060E1B] min-h-[50vh] flex items-center">
+      <section className="relative overflow-hidden bg-[#110c1d] min-h-[50vh] flex items-center">
         <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, rgba(30,58,90,0.55) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
         <div className="container-wide py-16 relative z-10">
           <AnimateOnView>
@@ -73,7 +73,7 @@ export default function DistributionAnalyticsPage() {
             <h1 className="font-display text-display-xl font-bold leading-tight text-white mt-4 mb-6 max-w-3xl">
               Turn Your Distribution Data Into a Competitive Advantage
             </h1>
-            <p className="text-lg max-w-2xl mb-8" style={{ color: '#8A9EBB' }}>
+            <p className="text-lg max-w-2xl mb-8" style={{ color: '#A89EC4' }}>
               Get faster insights, smarter operations, and measurable ROI with analytics, automation, and data integration purpose-built for the distribution industry.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -99,13 +99,13 @@ export default function DistributionAnalyticsPage() {
             </AnimateOnView>
             <StaggerContainer className="flex flex-col gap-6">
               {painPoints.map((point) => (
-                <div key={point.title} style={staggerItem} className="flex gap-4">
+                <StaggerItem key={point.title} className="flex gap-4">
                   <div className="w-1 bg-teal-500/40 self-stretch rounded-full flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-slate-900 mb-1">{point.title}</p>
                     <p className="text-slate-600 text-sm leading-relaxed">{point.desc}</p>
                   </div>
-                </div>
+                </StaggerItem>
               ))}
             </StaggerContainer>
           </div>
@@ -142,17 +142,17 @@ export default function DistributionAnalyticsPage() {
           </AnimateOnView>
           <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service) => (
-              <div key={service.title} style={staggerItem} className="border border-paper-border rounded-xl p-6 shadow-card">
+              <StaggerItem key={service.title} className="border border-paper-border rounded-xl p-6 shadow-card">
                 <h3 className="font-semibold text-slate-900 mb-2">{service.title}</h3>
                 <p className="text-sm text-slate-600 leading-relaxed">{service.desc}</p>
-              </div>
+              </StaggerItem>
             ))}
           </StaggerContainer>
         </div>
       </section>
 
       {/* Section 5: CTA */}
-      <section className="bg-[#060E1B] section-py-sm relative overflow-hidden">
+      <section className="bg-[#110c1d] section-py-sm relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, rgba(30,58,90,0.55) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
         <div className="container-wide text-center relative z-10">
           <AnimateOnView>
@@ -160,7 +160,7 @@ export default function DistributionAnalyticsPage() {
             <h3 className="font-display text-display-md font-bold text-white mt-4 mb-4">
               We Turn Distribution Data Into Business Outcomes
             </h3>
-            <p className="text-lg mb-8 max-w-2xl mx-auto" style={{ color: '#8A9EBB' }}>
+            <p className="text-lg mb-8 max-w-2xl mx-auto" style={{ color: '#A89EC4' }}>
               Deep distribution expertise. Technology-agnostic. End-to-end delivery.
             </p>
             <div className="flex flex-wrap justify-center gap-4">

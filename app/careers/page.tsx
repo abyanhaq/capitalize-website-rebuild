@@ -43,7 +43,7 @@ export default function CareersPage() {
     <>
       {/* ─── Hero ──────────────────────────────────────────────────── */}
       <section
-        className="relative flex items-center overflow-hidden bg-[#060E1B]"
+        className="relative flex items-center overflow-hidden bg-[#110c1d]"
         style={{ minHeight: '55vh' }}
       >
         <div
@@ -63,7 +63,7 @@ export default function CareersPage() {
 
         <div className="container-wide relative z-10 py-24 lg:py-32">
           <AnimateOnView delay={0}>
-            <p className="section-label mb-5" style={{ color: '#22D3EE', opacity: 0.8 }}>
+            <p className="section-label mb-5" style={{ color: '#4A72D9', opacity: 0.8 }}>
               Careers
             </p>
           </AnimateOnView>
@@ -73,7 +73,7 @@ export default function CareersPage() {
             </h1>
           </AnimateOnView>
           <AnimateOnView delay={0.12}>
-            <p className="text-lg leading-relaxed max-w-2xl mb-10" style={{ color: '#8A9EBB' }}>
+            <p className="text-lg leading-relaxed max-w-2xl mb-10" style={{ color: '#A89EC4' }}>
               We partner with best-in-class technologies like Alteryx, Tableau, Snowflake, Workday,
               IBM, Microsoft and UiPath, focusing on simplifying business intelligence and analytics
               for everyone. Capitalize offers the chance to build unparalleled networks and the
@@ -234,7 +234,7 @@ export default function CareersPage() {
       </section>
 
       {/* ─── CTA ───────────────────────────────────────────────────── */}
-      <section className="section-py-sm relative overflow-hidden bg-[#060E1B]">
+      <section className="section-py-sm relative overflow-hidden bg-[#110c1d]">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -249,7 +249,7 @@ export default function CareersPage() {
             </h2>
           </AnimateOnView>
           <AnimateOnView delay={0.06}>
-            <p className="text-base mb-8 max-w-lg mx-auto" style={{ color: '#8A9EBB' }}>
+            <p className="text-base mb-8 max-w-lg mx-auto" style={{ color: '#A89EC4' }}>
               We&apos;re always interested in talking to talented people. Reach out to our team
               directly — we&apos;d love to hear from you.
             </p>

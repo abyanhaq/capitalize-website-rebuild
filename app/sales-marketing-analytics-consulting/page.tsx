@@ -58,7 +58,7 @@ export default function SalesMarketingPage() {
   return (
     <>
       {/* ─── Hero ──────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-[#060E1B] min-h-[50vh] flex items-center">
+      <section className="relative overflow-hidden bg-[#110c1d] min-h-[50vh] flex items-center">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -77,7 +77,7 @@ export default function SalesMarketingPage() {
             </h1>
           </AnimateOnView>
           <AnimateOnView delay={0.12}>
-            <p className="text-lg leading-relaxed max-w-2xl mb-10" style={{ color: '#8A9EBB' }}>
+            <p className="text-lg leading-relaxed max-w-2xl mb-10" style={{ color: '#A89EC4' }}>
               Capitalize helps marketing and sales operations teams automate data access, cleanup,
               and reporting — so you can focus on optimizing campaigns, improving pipeline, and
               driving revenue instead of fighting spreadsheets.
@@ -131,7 +131,7 @@ export default function SalesMarketingPage() {
                     <div className="flex-shrink-0 mt-1.5">
                       <div
                         className="w-1 rounded-full"
-                        style={{ height: '2.5rem', background: '#0891B2' }}
+                        style={{ height: '2.5rem', background: '#0E41B8' }}
                       />
                     </div>
                     <div>
@@ -194,7 +194,7 @@ export default function SalesMarketingPage() {
       </section>
 
       {/* ─── CTA Banner ────────────────────────────────────────────────── */}
-      <section className="section-py-sm relative overflow-hidden bg-[#060E1B]">
+      <section className="section-py-sm relative overflow-hidden bg-[#110c1d]">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
@@ -213,7 +213,7 @@ export default function SalesMarketingPage() {
             </h3>
           </AnimateOnView>
           <AnimateOnView delay={0.1}>
-            <p className="text-base mb-8 max-w-lg mx-auto" style={{ color: '#8A9EBB' }}>
+            <p className="text-base mb-8 max-w-lg mx-auto" style={{ color: '#A89EC4' }}>
               Talk to a sales and marketing analytics expert today.
             </p>
           </AnimateOnView>
