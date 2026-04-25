@@ -15,7 +15,7 @@ export function StatsSection() {
           <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-paper-border">
             {STATS.map((s, i) => (
               <div key={s.label} className="px-8 py-4 text-center first:pl-0 last:pr-0">
-                <p className={`font-display text-display-sm font-bold mb-1 ${i === 0 ? 'text-teal' : 'text-slate-900'}`}>{s.value}</p>
+                <p className={`font-display text-display-sm font-bold mb-1 ${i === 0 ? '' : 'text-slate-900'}`} style={i === 0 ? { color: '#4A72D9' } : undefined}>{s.value}</p>
                 <p className="text-xs text-slate-500 tracking-wide">{s.label}</p>
               </div>
             ))}
