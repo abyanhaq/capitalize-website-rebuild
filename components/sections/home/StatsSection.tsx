@@ -11,9 +11,6 @@ export function StatsSection() {
   return (
     <section className="bg-paper-50 border-b border-paper-border py-14">
       <div className="container-wide">
-        <AnimateOnView delay={0.05}>
-          <p className="section-label mb-8 text-center">Proven Results</p>
-        </AnimateOnView>
         <AnimateOnView delay={0.1}>
           <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-paper-border">
             {STATS.map((s, i) => (
