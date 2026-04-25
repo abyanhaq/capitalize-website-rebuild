@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { PageShell } from '@/components/layout/PageShell'
-export const metadata: Metadata = { title: 'Hospitality Analytics Consulting', description: 'Hospitality analytics consulting to help brands improve data insights, streamline reporting, and drive smarter decisions with analytics and automation.' }
+export const metadata: Metadata = { title: 'Hospitality Analytics Consulting', description: 'Capitalize helps hospitality and restaurant organizations automate reporting, unify revenue and operational data, and build analytics that drive better guest experiences and margin performance.' }
 export default function HospitalityPage() {
-  return <PageShell section="Industries" title="Hospitality Analytics" description="Help hospitality brands improve guest insights, streamline operational reporting, and make data-driven decisions that improve revenue and experience." cta={{ label: 'Talk to an Expert', href: '/contact' }} />
+  return <PageShell section="Hospitality" title="Hospitality Analytics Consulting" description="Capitalize helps hospitality and restaurant organizations automate reporting, unify revenue and operational data, and build analytics that drive better guest experiences and margin performance." cta={{ label: 'Talk to a Hospitality Expert', href: '/contact' }} />
 }
