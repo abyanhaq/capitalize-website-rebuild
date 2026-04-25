@@ -78,7 +78,7 @@ export default function WhatWeDoPage() {
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
-            backgroundImage: 'radial-gradient(circle, rgba(30,58,90,0.55) 1px, transparent 1px)',
+            backgroundImage: 'radial-gradient(circle, rgba(74,50,110,0.45) 1px, transparent 1px)',
             backgroundSize: '28px 28px',
           }}
         />
@@ -86,7 +86,7 @@ export default function WhatWeDoPage() {
           className="absolute pointer-events-none"
           style={{
             top: '-10%', right: '-5%', width: '50%', height: '70%',
-            background: 'radial-gradient(ellipse at center, rgba(8,145,178,0.07) 0%, transparent 65%)',
+            background: 'radial-gradient(ellipse at center, rgba(14,65,184,0.08) 0%, transparent 65%)',
           }}
         />
 
@@ -247,7 +247,7 @@ export default function WhatWeDoPage() {
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
-            backgroundImage: 'radial-gradient(circle, rgba(30,58,90,0.45) 1px, transparent 1px)',
+            backgroundImage: 'radial-gradient(circle, rgba(74,50,110,0.45) 1px, transparent 1px)',
             backgroundSize: '28px 28px',
           }}
         />
@@ -255,7 +255,7 @@ export default function WhatWeDoPage() {
           className="absolute pointer-events-none"
           style={{
             bottom: '-10%', right: '-5%', width: '50%', height: '80%',
-            background: 'radial-gradient(ellipse at center, rgba(8,145,178,0.06) 0%, transparent 65%)',
+            background: 'radial-gradient(ellipse at center, rgba(14,65,184,0.08) 0%, transparent 65%)',
           }}
         />
         <div className="container-wide relative z-10 text-center">

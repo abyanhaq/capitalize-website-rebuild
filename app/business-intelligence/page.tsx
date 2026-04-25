@@ -96,7 +96,7 @@ export default function BusinessIntelligencePage() {
           className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage:
-              'radial-gradient(circle, rgba(30,58,90,0.55) 1px, transparent 1px)',
+              'radial-gradient(circle, rgba(74,50,110,0.45) 1px, transparent 1px)',
             backgroundSize: '28px 28px',
           }}
         />
@@ -108,7 +108,7 @@ export default function BusinessIntelligencePage() {
             width: '50%',
             height: '70%',
             background:
-              'radial-gradient(ellipse at center, rgba(8,145,178,0.07) 0%, transparent 65%)',
+              'radial-gradient(ellipse at center, rgba(14,65,184,0.08) 0%, transparent 65%)',
           }}
         />
 
@@ -282,7 +282,7 @@ export default function BusinessIntelligencePage() {
                     <div className="flex items-start gap-3">
                       <span
                         className="flex-shrink-0 mt-1 w-5 h-5 rounded-full flex items-center justify-center"
-                        style={{ background: 'rgba(8,145,178,0.12)' }}
+                        style={{ background: 'rgba(14,65,184,0.08)' }}
                       >
                         <span
                           className="w-1.5 h-1.5 rounded-full"
@@ -332,7 +332,7 @@ export default function BusinessIntelligencePage() {
           className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage:
-              'radial-gradient(circle, rgba(30,58,90,0.45) 1px, transparent 1px)',
+              'radial-gradient(circle, rgba(74,50,110,0.45) 1px, transparent 1px)',
             backgroundSize: '28px 28px',
           }}
         />

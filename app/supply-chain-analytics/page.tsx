@@ -63,7 +63,7 @@ export default function SupplyChainPage() {
           className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage:
-              'radial-gradient(circle, rgba(30,58,90,0.55) 1px, transparent 1px)',
+              'radial-gradient(circle, rgba(74,50,110,0.45) 1px, transparent 1px)',
             backgroundSize: '28px 28px',
           }}
         />
@@ -198,7 +198,7 @@ export default function SupplyChainPage() {
           className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage:
-              'radial-gradient(circle, rgba(30,58,90,0.55) 1px, transparent 1px)',
+              'radial-gradient(circle, rgba(74,50,110,0.45) 1px, transparent 1px)',
             backgroundSize: '28px 28px',
           }}
         />

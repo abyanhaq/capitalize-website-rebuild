@@ -27,6 +27,7 @@ const config: Config = {
           50: '#F7F9FC',
           100: '#EEF2F8',
           border: '#D8E0EC',
+          'purple-accent': '#A89EC4',
         },
         // Brand accent — original royal blue
         teal: {

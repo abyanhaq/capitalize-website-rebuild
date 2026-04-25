@@ -1,24 +1,21 @@
 import { AnimateOnView } from '@/components/ui/AnimateOnView'
 
 const STATS = [
-  { value: '50K+',  label: 'Hours Saved for Clients' },
-  { value: '$10M+', label: 'Operational Savings Delivered' },
-  { value: '5K+',   label: 'Workflows Designed' },
-  { value: '9',     label: 'Industries Served' },
+  { value: '1,500+', label: 'Projects Completed' },
+  { value: '1,000+', label: 'Clients Served' },
+  { value: '95%',    label: 'Client Retention Rate' },
+  { value: '20+',    label: 'Years of Experience' },
 ]
 
 export function StatsSection() {
   return (
     <section className="bg-paper-50 border-b border-paper-border py-14">
       <div className="container-wide">
-        <AnimateOnView delay={0.05}>
-          <p className="section-label mb-8 text-center">Proven Results</p>
-        </AnimateOnView>
         <AnimateOnView delay={0.1}>
           <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-paper-border">
-            {STATS.map((s, i) => (
+            {STATS.map((s) => (
               <div key={s.label} className="px-8 py-4 text-center first:pl-0 last:pr-0">
-                <p className={`font-display text-display-sm font-bold mb-1 ${i === 0 ? 'text-teal' : 'text-slate-900'}`}>{s.value}</p>
+                <p className="font-display text-display-sm font-bold mb-1 text-teal">{s.value}</p>
                 <p className="text-xs text-slate-500 tracking-wide">{s.label}</p>
               </div>
             ))}

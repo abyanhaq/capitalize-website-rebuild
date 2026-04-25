@@ -58,7 +58,7 @@ export default function OilGasAnalyticsPage() {
     <main>
       {/* Section 1: Hero */}
       <section className="relative overflow-hidden bg-[#110c1d] min-h-[50vh] flex items-center">
-        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, rgba(30,58,90,0.55) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, rgba(74,50,110,0.45) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
         <div className="container-wide py-16 relative z-10">
           <AnimateOnView>
             <span className="section-label">Oil &amp; Gas Analytics</span>
@@ -145,7 +145,7 @@ export default function OilGasAnalyticsPage() {
 
       {/* Section 5: CTA */}
       <section className="bg-[#110c1d] section-py-sm relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, rgba(30,58,90,0.55) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle, rgba(74,50,110,0.45) 1px, transparent 1px)', backgroundSize: '28px 28px' }} />
         <div className="container-wide text-center relative z-10">
           <AnimateOnView>
             <span className="section-label">Get Started</span>
