@@ -70,7 +70,7 @@ export default function ContactPage() {
             </p>
           </AnimateOnView>
           <AnimateOnView delay={0.06}>
-            <h1 className="font-display text-display-xl font-bold text-white leading-[1.06] mb-6 max-w-2xl">
+            <h1 className="font-display text-[2rem] sm:text-display-xl font-bold text-white leading-[1.06] mb-6 max-w-2xl">
               Contact Us
             </h1>
           </AnimateOnView>

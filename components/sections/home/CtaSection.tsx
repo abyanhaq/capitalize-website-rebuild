@@ -32,7 +32,7 @@ export function CtaSection() {
         </AnimateOnView>
 
         <AnimateOnView delay={0.05}>
-          <h2 className="font-display text-display-lg font-bold text-white leading-tight mb-6">
+          <h2 className="font-display text-display-md sm:text-display-lg font-bold text-white leading-tight mb-6">
             Ready to Make Your Data Work for You?
           </h2>
         </AnimateOnView>

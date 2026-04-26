@@ -70,7 +70,7 @@ export function HeroSection() {
           {/* Headline */}
           <motion.h1
             {...fade(0.08)}
-            className="font-display text-display-xl lg:text-display-2xl font-bold text-white leading-[1.06] mb-7"
+            className="font-display text-[2rem] sm:text-display-xl lg:text-display-2xl font-bold text-white leading-[1.06] mb-7"
           >
             Empowering Organizations
             <br />
