@@ -91,12 +91,12 @@ export default function BusinessIntelligencePage() {
   return (
     <>
       {/* ─── Hero ──────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-[#060E1B] min-h-[55vh] flex items-center">
+      <section className="relative overflow-hidden bg-[#110c1d] min-h-[55vh] flex items-center">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage:
-              'radial-gradient(circle, rgba(30,58,90,0.55) 1px, transparent 1px)',
+              'radial-gradient(circle, rgba(74,50,110,0.45) 1px, transparent 1px)',
             backgroundSize: '28px 28px',
           }}
         />
@@ -108,13 +108,13 @@ export default function BusinessIntelligencePage() {
             width: '50%',
             height: '70%',
             background:
-              'radial-gradient(ellipse at center, rgba(8,145,178,0.07) 0%, transparent 65%)',
+              'radial-gradient(ellipse at center, rgba(14,65,184,0.08) 0%, transparent 65%)',
           }}
         />
 
         <div className="container-wide relative z-10 py-24 lg:py-32">
           <AnimateOnView delay={0}>
-            <p className="section-label mb-5" style={{ color: '#22D3EE', opacity: 0.8 }}>
+            <p className="section-label mb-5" style={{ color: '#4A72D9', opacity: 0.8 }}>
               Business Intelligence
             </p>
           </AnimateOnView>
@@ -124,7 +124,7 @@ export default function BusinessIntelligencePage() {
             </h1>
           </AnimateOnView>
           <AnimateOnView delay={0.12}>
-            <p className="text-lg leading-relaxed max-w-2xl mb-10" style={{ color: '#8A9EBB' }}>
+            <p className="text-lg leading-relaxed max-w-2xl mb-10" style={{ color: '#A89EC4' }}>
               Capitalize helps organizations design modern business intelligence solutions that turn
               complex data into actionable insight. We combine technical expertise with business
               strategy to deliver dashboards, reports, and analytics that drive smarter, faster
@@ -282,11 +282,11 @@ export default function BusinessIntelligencePage() {
                     <div className="flex items-start gap-3">
                       <span
                         className="flex-shrink-0 mt-1 w-5 h-5 rounded-full flex items-center justify-center"
-                        style={{ background: 'rgba(8,145,178,0.12)' }}
+                        style={{ background: 'rgba(14,65,184,0.08)' }}
                       >
                         <span
                           className="w-1.5 h-1.5 rounded-full"
-                          style={{ background: '#0891B2' }}
+                          style={{ background: '#0E41B8' }}
                         />
                       </span>
                       <p className="text-slate-700 text-base leading-relaxed">{point}</p>
@@ -327,12 +327,12 @@ export default function BusinessIntelligencePage() {
       </section>
 
       {/* ─── CTA ───────────────────────────────────────────────────────── */}
-      <section className="section-py-sm relative overflow-hidden bg-[#060E1B]">
+      <section className="section-py-sm relative overflow-hidden bg-[#110c1d]">
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage:
-              'radial-gradient(circle, rgba(30,58,90,0.45) 1px, transparent 1px)',
+              'radial-gradient(circle, rgba(74,50,110,0.45) 1px, transparent 1px)',
             backgroundSize: '28px 28px',
           }}
         />
@@ -343,7 +343,7 @@ export default function BusinessIntelligencePage() {
             </h3>
           </AnimateOnView>
           <AnimateOnView delay={0.06}>
-            <p className="text-base mb-8 max-w-lg mx-auto" style={{ color: '#8A9EBB' }}>
+            <p className="text-base mb-8 max-w-lg mx-auto" style={{ color: '#A89EC4' }}>
               Let&apos;s make your BI work as hard as you do.
             </p>
           </AnimateOnView>

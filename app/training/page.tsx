@@ -12,7 +12,7 @@ const dotGrid = (
   <div
     className="absolute inset-0 pointer-events-none"
     style={{
-      backgroundImage: 'radial-gradient(circle, rgba(30,58,90,0.55) 1px, transparent 1px)',
+      backgroundImage: 'radial-gradient(circle, rgba(74,50,110,0.45) 1px, transparent 1px)',
       backgroundSize: '28px 28px',
     }}
   />
@@ -89,7 +89,7 @@ export default function TrainingPage() {
   return (
     <main>
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden bg-[#060E1B] min-h-[55vh] flex items-center">
+      <section className="relative overflow-hidden bg-[#110c1d] min-h-[55vh] flex items-center">
         {dotGrid}
         <div className="relative container-wide section-py">
           <AnimateOnView>
@@ -97,7 +97,7 @@ export default function TrainingPage() {
             <h1 className="font-display text-display-xl font-bold leading-tight text-white max-w-4xl mb-6">
               Training &amp; Mentoring That Turns Software Investment Into Real ROI
             </h1>
-            <p className="text-lg max-w-2xl mb-8" style={{ color: '#8A9EBB' }}>
+            <p className="text-lg max-w-2xl mb-8" style={{ color: '#A89EC4' }}>
               Hands-on, practical training designed to help your team move from learning the tools
               to delivering real business value. Build lasting expertise in the analytics, AI, and
               automation tools your organization depends on.
@@ -278,7 +278,7 @@ export default function TrainingPage() {
       </section>
 
       {/* ── CTA Banner ── */}
-      <section className="relative bg-[#060E1B] section-py-sm overflow-hidden">
+      <section className="relative bg-[#110c1d] section-py-sm overflow-hidden">
         {dotGrid}
         <div className="relative container-wide text-center">
           <AnimateOnView>
@@ -286,7 +286,7 @@ export default function TrainingPage() {
             <h3 className="font-display text-display-lg font-bold text-white mb-4">
               Talk to a Training &amp; Analytics Expert
             </h3>
-            <p className="text-lg mb-8 max-w-xl mx-auto" style={{ color: '#8A9EBB' }}>
+            <p className="text-lg mb-8 max-w-xl mx-auto" style={{ color: '#A89EC4' }}>
               Let&apos;s build a training program tailored to your team&apos;s tools, goals, and
               skill level.
             </p>

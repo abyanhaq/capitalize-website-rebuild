@@ -12,7 +12,7 @@ const dotGrid = (
   <div
     className="absolute inset-0 pointer-events-none"
     style={{
-      backgroundImage: 'radial-gradient(circle, rgba(30,58,90,0.55) 1px, transparent 1px)',
+      backgroundImage: 'radial-gradient(circle, rgba(74,50,110,0.45) 1px, transparent 1px)',
       backgroundSize: '28px 28px',
     }}
   />
@@ -103,7 +103,7 @@ export default function DataEngineeringIntegrationPage() {
   return (
     <main>
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden bg-[#060E1B] min-h-[55vh] flex items-center">
+      <section className="relative overflow-hidden bg-[#110c1d] min-h-[55vh] flex items-center">
         {dotGrid}
         <div className="relative container-wide section-py">
           <AnimateOnView>
@@ -111,7 +111,7 @@ export default function DataEngineeringIntegrationPage() {
             <h1 className="font-display text-display-xl font-bold leading-tight text-white max-w-4xl mb-6">
               Connect Every System. Streamline Every Pipeline. Trust Every Decision.
             </h1>
-            <p className="text-lg max-w-2xl mb-8" style={{ color: '#8A9EBB' }}>
+            <p className="text-lg max-w-2xl mb-8" style={{ color: '#A89EC4' }}>
               Capitalize designs and builds modern data engineering and integration solutions that
               connect your systems, automate your data pipelines, and deliver clean, trusted data to
               your analytics tools — at scale.
@@ -290,7 +290,7 @@ export default function DataEngineeringIntegrationPage() {
       </section>
 
       {/* ── CTA Banner ── */}
-      <section className="relative bg-[#060E1B] section-py-sm overflow-hidden">
+      <section className="relative bg-[#110c1d] section-py-sm overflow-hidden">
         {dotGrid}
         <div className="relative container-wide text-center">
           <AnimateOnView>
@@ -298,7 +298,7 @@ export default function DataEngineeringIntegrationPage() {
             <h3 className="font-display text-display-lg font-bold text-white mb-4">
               Let&apos;s Connect Your Data — and Your Decisions.
             </h3>
-            <p className="text-lg mb-8 max-w-xl mx-auto" style={{ color: '#8A9EBB' }}>
+            <p className="text-lg mb-8 max-w-xl mx-auto" style={{ color: '#A89EC4' }}>
               Schedule a 30-minute consultation to discuss your data engineering challenges.
             </p>
             <Button href="/contact" variant="primary" size="lg" arrow>

@@ -12,7 +12,7 @@ const dotGrid = (
   <div
     className="absolute inset-0 pointer-events-none"
     style={{
-      backgroundImage: 'radial-gradient(circle, rgba(30,58,90,0.55) 1px, transparent 1px)',
+      backgroundImage: 'radial-gradient(circle, rgba(74,50,110,0.45) 1px, transparent 1px)',
       backgroundSize: '28px 28px',
     }}
   />
@@ -85,7 +85,7 @@ export default function ProcessAutomationPage() {
   return (
     <main>
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden bg-[#060E1B] min-h-[55vh] flex items-center">
+      <section className="relative overflow-hidden bg-[#110c1d] min-h-[55vh] flex items-center">
         {dotGrid}
         <div className="relative container-wide section-py">
           <AnimateOnView>
@@ -93,7 +93,7 @@ export default function ProcessAutomationPage() {
             <h1 className="font-display text-display-xl font-bold leading-tight text-white max-w-4xl mb-6">
               Streamline Processes. Eliminate Bottlenecks. Maximize Efficiency.
             </h1>
-            <p className="text-lg max-w-2xl mb-8" style={{ color: '#8A9EBB' }}>
+            <p className="text-lg max-w-2xl mb-8" style={{ color: '#A89EC4' }}>
               At Capitalize, we help organizations automate repetitive, error-prone tasks so teams
               can focus on higher-value work. From workflow automation to intelligent process design,
               our experts build solutions that reduce costs, increase accuracy, and accelerate
@@ -278,7 +278,7 @@ export default function ProcessAutomationPage() {
       </section>
 
       {/* ── CTA Banner ── */}
-      <section className="relative bg-[#060E1B] section-py-sm overflow-hidden">
+      <section className="relative bg-[#110c1d] section-py-sm overflow-hidden">
         {dotGrid}
         <div className="relative container-wide text-center">
           <AnimateOnView>
@@ -286,7 +286,7 @@ export default function ProcessAutomationPage() {
             <h3 className="font-display text-display-lg font-bold text-white mb-4">
               Let&apos;s Build Your Automation Roadmap
             </h3>
-            <p className="text-lg mb-8 max-w-xl mx-auto" style={{ color: '#8A9EBB' }}>
+            <p className="text-lg mb-8 max-w-xl mx-auto" style={{ color: '#A89EC4' }}>
               Schedule a 30-minute automation consultation to identify your highest-impact
               opportunities.
             </p>

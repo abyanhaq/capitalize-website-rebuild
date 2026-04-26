@@ -37,15 +37,15 @@ export function Footer() {
             <div className="flex items-center gap-2.5">
               <div className="relative h-8 w-8">
                 <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
-                  <rect width="32" height="32" rx="6" fill="#0891B2" fillOpacity="0.10" />
+                  <rect width="32" height="32" rx="6" fill="#0E41B8" fillOpacity="0.12" />
                   <path
                     d="M8 22L14 10L20 18L24 14"
-                    stroke="#0891B2"
+                    stroke="#0E41B8"
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
-                  <circle cx="24" cy="14" r="2" fill="#0891B2" />
+                  <circle cx="24" cy="14" r="2" fill="#0E41B8" />
                 </svg>
               </div>
               <div className="flex flex-col leading-none">

@@ -45,13 +45,13 @@ export default function ContactPage() {
     <>
       {/* ─── Hero ──────────────────────────────────────────────────── */}
       <section
-        className="relative flex items-center overflow-hidden bg-[#060E1B]"
+        className="relative flex items-center overflow-hidden bg-[#110c1d]"
         style={{ minHeight: '40vh' }}
       >
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
-            backgroundImage: 'radial-gradient(circle, rgba(30,58,90,0.55) 1px, transparent 1px)',
+            backgroundImage: 'radial-gradient(circle, rgba(74,50,110,0.45) 1px, transparent 1px)',
             backgroundSize: '28px 28px',
           }}
         />
@@ -59,13 +59,13 @@ export default function ContactPage() {
           className="absolute pointer-events-none"
           style={{
             top: '-10%', right: '-5%', width: '50%', height: '70%',
-            background: 'radial-gradient(ellipse at center, rgba(8,145,178,0.07) 0%, transparent 65%)',
+            background: 'radial-gradient(ellipse at center, rgba(14,65,184,0.08) 0%, transparent 65%)',
           }}
         />
 
         <div className="container-wide relative z-10 py-20 lg:py-28">
           <AnimateOnView delay={0}>
-            <p className="section-label mb-5" style={{ color: '#22D3EE', opacity: 0.8 }}>
+            <p className="section-label mb-5" style={{ color: '#4A72D9', opacity: 0.8 }}>
               Contact Us
             </p>
           </AnimateOnView>
@@ -75,7 +75,7 @@ export default function ContactPage() {
             </h1>
           </AnimateOnView>
           <AnimateOnView delay={0.12}>
-            <p className="text-lg leading-relaxed max-w-2xl" style={{ color: '#8A9EBB' }}>
+            <p className="text-lg leading-relaxed max-w-2xl" style={{ color: '#A89EC4' }}>
               Whether you&apos;re exploring AI, automating workflows, or modernizing your data
               environment, our team is here to help you find the right path forward. Tell us what
               you&apos;re working on — and we&apos;ll show you how Capitalize can accelerate results.

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Space_Grotesk, JetBrains_Mono } from 'next/font/google'
+import { Inter, Lora, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
@@ -10,9 +10,9 @@ const inter = Inter({
   display: 'swap',
 })
 
-const spaceGrotesk = Space_Grotesk({
+const lora = Lora({
   subsets: ['latin'],
-  variable: '--font-space-grotesk',
+  variable: '--font-lora',
   display: 'swap',
 })
 
@@ -66,7 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}
+      className={`${inter.variable} ${lora.variable} ${jetbrainsMono.variable}`}
       suppressHydrationWarning
     >
       <body className="min-h-dvh flex flex-col antialiased">

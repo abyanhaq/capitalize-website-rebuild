@@ -9,17 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Dark surfaces — deep ink scale (hero, CTA, footer, header mega-menu)
+        // Dark surfaces — original deep purple-navy scale
         navy: {
-          950: '#03080F',
-          900: '#060E1B',
-          800: '#0B1526',
-          700: '#111E35',
-          600: '#172A45',
-          500: '#1D3555',
-          400: '#243F65',
-          border: '#1A2E4A',
-          'border-subtle': '#0F1E30',
+          950: '#080614',
+          900: '#110c1d',
+          800: '#1a1230',
+          700: '#1e1535',
+          600: '#251a40',
+          500: '#2e2050',
+          400: '#372660',
+          border: '#2e1e4a',
+          'border-subtle': '#1a1230',
         },
         // Light surfaces — paper scale (content sections)
         paper: {
@@ -27,17 +27,18 @@ const config: Config = {
           50: '#F7F9FC',
           100: '#EEF2F8',
           border: '#D8E0EC',
+          'purple-accent': '#A89EC4',
         },
-        // Brand accent — refined professional teal (works on dark and light)
+        // Brand accent — original royal blue
         teal: {
-          DEFAULT: '#0891B2',
-          bright: '#22D3EE',
-          dim: '#0E7490',
+          DEFAULT: '#0E41B8',
+          bright: '#4A72D9',
+          dim: '#0B35A0',
         },
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-space-grotesk)', 'var(--font-inter)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-lora)', 'Georgia', 'serif'],
         mono: ['var(--font-jetbrains-mono)', 'ui-monospace', 'monospace'],
       },
       fontSize: {
@@ -80,7 +81,7 @@ const config: Config = {
       },
       boxShadow: {
         'card': '0 1px 3px rgba(0,0,0,0.07), 0 0 0 1px #D8E0EC',
-        'card-hover': '0 4px 20px rgba(0,0,0,0.10), 0 0 0 1px rgba(8,145,178,0.35)',
+        'card-hover': '0 4px 20px rgba(0,0,0,0.10), 0 0 0 1px rgba(14,65,184,0.35)',
         'card-dark': '0 1px 4px rgba(0,0,0,0.4), 0 0 0 1px rgba(26,46,74,0.8)',
         'panel': '0 8px 30px rgba(0,0,0,0.08), 0 0 0 1px #D8E0EC',
       },
