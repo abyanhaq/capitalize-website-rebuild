@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { cn } from '@/lib/utils'
@@ -21,34 +22,15 @@ type MegaMenuId = 'how-we-help' | 'who-we-help' | 'insights' | 'products' | null
 // ─── Logo ─────────────────────────────────────────────────────────────────────
 function Logo({ light }: { light?: boolean }) {
   return (
-    <Link href="/" className="flex items-center gap-2.5 group flex-shrink-0">
-      <div className="relative h-8 w-8">
-        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
-          <rect width="32" height="32" rx="6" fill="#0E41B8" fillOpacity={light ? '0.20' : '0.12'} />
-          <path
-            d="M8 22L14 10L20 18L24 14"
-            stroke={light ? '#4A72D9' : '#0E41B8'}
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <circle cx="24" cy="14" r="2" fill={light ? '#4A72D9' : '#0E41B8'} />
-        </svg>
-      </div>
-      <div className="flex flex-col leading-none">
-        <span className={cn(
-          'font-display text-base font-bold tracking-tight transition-colors duration-300',
-          light ? 'text-white group-hover:text-teal-bright' : 'text-slate-900 group-hover:text-teal'
-        )}>
-          Capitalize
-        </span>
-        <span className={cn(
-          'font-sans text-[10px] tracking-widest uppercase font-medium opacity-80 transition-colors duration-300',
-          light ? 'text-teal-bright' : 'text-teal'
-        )}>
-          Analytics
-        </span>
-      </div>
+    <Link href="/" className="flex items-center flex-shrink-0">
+      <Image
+        src={light ? '/images/logo-white.png' : '/images/logo.png'}
+        alt="Capitalize Analytics"
+        width={124}
+        height={light ? 42 : 46}
+        className="object-contain"
+        priority
+      />
     </Link>
   )
 }
